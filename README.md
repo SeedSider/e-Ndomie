@@ -16,4 +16,4 @@
 [![coverage report](https://gitlab.com/adpro_kelompok_c/e-ndomie/badges/master/coverage.svg)](https://gitlab.com/adpro_kelompok_c/e-ndomie/commits/master)
 
 ## Link Heroku:
-TBA
+https://e-ndomie.herokuapp.com/
