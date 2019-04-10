@@ -1,0 +1,1 @@
+ini bagian naufaldi athallah rifqi
