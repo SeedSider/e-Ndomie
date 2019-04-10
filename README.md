@@ -10,10 +10,10 @@
 5. 1706039950 Usman Sidiq
 
 ## Status Pipelines:
-TBA
+[![pipeline status](https://gitlab.com/adpro_kelompok_c/e-ndomie/badges/master/pipeline.svg)](https://gitlab.com/adpro_kelompok_c/e-ndomie/commits/master)
 
 ## Status Coverage:
-TBA
+[![coverage report](https://gitlab.com/adpro_kelompok_c/e-ndomie/badges/master/coverage.svg)](https://gitlab.com/adpro_kelompok_c/e-ndomie/commits/master)
 
 ## Link Heroku:
 TBA
