@@ -1,4 +1,4 @@
-package adprogc4.endomie;
+package com.adprog6.endomie;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
