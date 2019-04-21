@@ -4,7 +4,8 @@ import com.adprog6.endomie.diy.CustomNoodle;
 
 public enum IndomieProducer {
 	INDOMIE_SOTO,
-	INDOMIE_GORENG;
+	INDOMIE_GORENG,
+	INDOMIE_RENDANG;
 
 	public CustomNoodle BaseNoodleCreator() {
 		CustomNoodle BaseNoodle = null;
@@ -15,6 +16,8 @@ public enum IndomieProducer {
 			case INDOMIE_GORENG:
 				BaseNoodle = new IndomieGoreng();
 				break;
+			case INDOMIE_RENDANG:
+				BaseNoodle = new IndomieRendang();
 			default:
 				BaseNoodle = new IndomieSoto();
 				break;
