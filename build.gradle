@@ -40,4 +40,5 @@ dependencies {
     compile'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.0.RELEASE'
     testCompile'org.springframework.boot:spring-boot-starter-test'
+    implementation 'junit:junit:4.12'
 }

@@ -9,24 +9,24 @@ import org.junit.Test;
 
 public class OrderBehaviourTest {
 
-    private Class<?> orderBehaviorClass;
+    private Class<?> orderBehaviourClass;
 
     @Before
     public void setUp() throws Exception {
-        orderBehaviorClass = Class.forName("com.adprog6.endomie.order.OrderBehaviour");
+        orderBehaviourClass = Class.forName("com.adprog6.endomie.order.OrderBehaviour");
     }
 
     @Test
-    public void testOrderBehaviorIsAPublicInterface() {
-        int classModifiers = orderBehaviorClass.getModifiers();
+    public void testOrderBehaviourIsAPublicInterface() {
+        int classModifiers = orderBehaviourClass.getModifiers();
 
         assertTrue(Modifier.isInterface(classModifiers));
         assertTrue(Modifier.isPublic(classModifiers));
     }
 
     @Test
-    public void testOrderBehaviorHasOrderAbstractMethod() throws Exception {
-        Method order = orderBehaviorClass.getDeclaredMethod("order");
+    public void testOrderBehaviourHasOrderAbstractMethod() throws Exception {
+        Method order = orderBehaviourClass.getDeclaredMethod("order");
         int methodModifiers = order.getModifiers();
 
         assertTrue(Modifier.isPublic(methodModifiers));

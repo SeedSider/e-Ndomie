@@ -1,6 +1,5 @@
 package com.adprog6.endomie.order;
 
-public interface OrderBehavior {
-
+public interface OrderBehaviour {
     void setOrderType();
 }
