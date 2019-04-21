@@ -23,7 +23,7 @@ public class OrderBehaviorTest {
     }
 
     @Test
-    public void testOrderBehaviorHasQuackAbstractMethod() throws Exception {
+    public void testOrderBehaviorHasOrderAbstractMethod() throws Exception {
         Method order = orderBehaviorClass.getDeclaredMethod("order");
         int methodModifiers = order.getModifiers();
 

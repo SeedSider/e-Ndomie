@@ -1,4 +1,4 @@
 public interface OrderBehavior {
 
-    void order();
+    void setOrderType();
 }
