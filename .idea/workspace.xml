@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="582314d8-039d-446a-9ce6-5de8ff171fd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy-order/main/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/strategy-order/main/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy-order/main/OrderBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/strategy-order/main/OrderBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy-order/test/OrderBehaviourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/strategy-order/test/OrderBehaviourTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Order/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Order/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Order/DineIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/DineIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Order/OrderBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/Order/DeliveryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DeliveryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/Order/DineInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DineInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/Order/OrderBehaviourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderBehaviourTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/Order/OrderanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderanTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -17,8 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -26,12 +31,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/test/OrderBehaviourTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderBehaviourTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="-350">
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,9 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/test/OrderanTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-554">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,34 +57,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/test/DineInTest.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/test/DeliveryTest.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/main/OrderBehaviour.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state>
+              <caret selection-end-column="34" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strategy-order/main/Delivery.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/strategy-order/main/Cart.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="24" />
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/WebSecurityConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DineInTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/DineIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Delivery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderBehaviour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -99,6 +136,16 @@
         <option value="$PROJECT_DIR$/strategy-order/test/OrderBehaviourTest.java" />
         <option value="$PROJECT_DIR$/strategy-order/main/OrderBehaviour.java" />
         <option value="$PROJECT_DIR$/strategy-order/main/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Order/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Delivery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/DineIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderBehaviour.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderBehaviourTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderanTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DineInTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DeliveryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderSimulator.java" />
       </list>
     </option>
   </component>
@@ -113,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,24 +218,11 @@
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="adprog6" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
@@ -232,37 +267,40 @@
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="adprog6" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\setia\Desktop\e-ndomie\src\main\java\com\adprog6\endomie\order" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\setia\Desktop\e-ndomie\src\main\java\com\adprog6\endomie\Order" />
+      <recent name="C:\Users\setia\Desktop\e-ndomie\src\test\java\com\adprog6\endomie\Order" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,30 +324,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555832923044</updated>
-      <workItem from="1555832926615" duration="638000" />
+      <workItem from="1555832926615" duration="1221000" />
+      <workItem from="1555835375045" duration="1510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="638000" />
+    <option name="totallyTimeSpent" value="2731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.3090586" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -317,61 +350,101 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3090586" />
+      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/strategy-order/test/OrderBehaviourTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DeliveryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderBehaviourTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/test/OrderanTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/OrderanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-554">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/test/DineInTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/test/DeliveryTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/main/Delivery.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/main/OrderBehaviour.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/order/DineInTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strategy-order/main/Cart.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/WebSecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderBehaviour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/DineIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/OrderSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>

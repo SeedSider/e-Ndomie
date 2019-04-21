@@ -1,3 +1,5 @@
+package com.adprog6.endomie.order;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

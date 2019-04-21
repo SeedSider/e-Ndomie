@@ -1,3 +1,5 @@
+package com.adprog6.endomie.order;
+
 import static org.junit.Assert.assertTrue;
 
 import java.lang.reflect.Method;
