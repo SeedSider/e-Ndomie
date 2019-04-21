@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13873366-3678-4759-ab40-9c94ad272073" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="13873366-3678-4759-ab40-9c94ad272073" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadMe.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -29,6 +27,11 @@
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/strategy-order/test/DeliveryTest.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -61,6 +64,23 @@
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="462c0819:PsiDirectoryNode" />
+              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="462c0819:PsiDirectoryNode" />
+              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="462c0819:PsiDirectoryNode" />
+              <item name="strategy-order" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,16 +190,15 @@
       <workItem from="1554888504439" duration="283000" />
       <workItem from="1554891845862" duration="1496000" />
       <workItem from="1555141778568" duration="720000" />
-      <workItem from="1555299977642" duration="2351000" />
+      <workItem from="1555299977642" duration="2744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4850000" />
+    <option name="totallyTimeSpent" value="5243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -227,6 +246,9 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strategy-order/test/DeliveryTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
