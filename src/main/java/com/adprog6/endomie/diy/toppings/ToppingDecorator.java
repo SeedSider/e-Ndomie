@@ -3,15 +3,15 @@ package com.adprog6.endomie.diy.toppings;
 import com.adprog6.endomie.diy.CustomNoodle;
 
 public enum  ToppingDecorator {
-	FRIED_ONION;
+	BAWANG_GORENG;
 
 	public CustomNoodle addTopping(CustomNoodle Noodle) {
 		switch (this) {
-			case FRIED_ONION:
-				Noodle = new FriedOnion(Noodle);
+			case BAWANG_GORENG:
+				Noodle = new BawangGoreng(Noodle);
 				break;
 			default:
-				Noodle = new FriedOnion(Noodle);
+				Noodle = new BawangGoreng(Noodle);
 				break;
 		}
 		return Noodle;

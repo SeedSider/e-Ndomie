@@ -2,10 +2,10 @@ package com.adprog6.endomie.diy.toppings;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 
-public class FriedOnion extends CustomNoodle {
+public class BawangGoreng extends CustomNoodle {
 	CustomNoodle customNoodle;
 
-	public FriedOnion(CustomNoodle customNoodle) {
+	public BawangGoreng(CustomNoodle customNoodle) {
 		this.customNoodle = customNoodle;
 	}
 

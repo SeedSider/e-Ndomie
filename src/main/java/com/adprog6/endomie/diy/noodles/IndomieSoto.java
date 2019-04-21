@@ -2,9 +2,9 @@ package com.adprog6.endomie.diy.noodles;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 
-public class Soto extends CustomNoodle {
-	public Soto() {
-		description = "Indomie Rasa Soto";
+public class IndomieSoto extends CustomNoodle {
+	public IndomieSoto() {
+		description = "Indomie Kuah Rasa Soto";
 	}
 
 	@Override

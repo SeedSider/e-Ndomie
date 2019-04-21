@@ -2,17 +2,21 @@ package com.adprog6.endomie.diy.noodles;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 
-public enum  NoodleProducer {
-	SOTO;
+public enum IndomieProducer {
+	INDOMIE_SOTO,
+	INDOMIE_GORENG;
 
 	public CustomNoodle BaseNoodleCreator() {
 		CustomNoodle BaseNoodle = null;
 		switch (this) {
-			case SOTO:
-				BaseNoodle = new Soto();
+			case INDOMIE_SOTO:
+				BaseNoodle = new IndomieSoto();
+				break;
+			case INDOMIE_GORENG:
+				BaseNoodle = new IndomieGoreng();
 				break;
 			default:
-				BaseNoodle = new Soto();
+				BaseNoodle = new IndomieSoto();
 				break;
 		}
 		return BaseNoodle;
