@@ -7,13 +7,13 @@ import java.lang.reflect.Modifier;
 import org.junit.Before;
 import org.junit.Test;
 
-public class OrderBehaviorTest {
+public class OrderBehaviourTest {
 
     private Class<?> orderBehaviorClass;
 
     @Before
     public void setUp() throws Exception {
-        orderBehaviorClass = Class.forName("main.OrderBehavior");
+        orderBehaviorClass = Class.forName("com.adprog6.endomie.order.OrderBehaviour");
     }
 
     @Test

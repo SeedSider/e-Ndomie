@@ -11,21 +11,21 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-public class OrderTest {
+public class CartTest {
 
     private Class<?> orderanClass;
 
     @Before
     public void setUp() throws Exception {
-        orderanClass = Class.forName("main.Orderan");
+        orderanClass = Class.forName("com.adprog6.endomie.order.Cart");
     }
 
-    @Test
-    public void testOrderanIsAbstract() {
-        int classModifiers = orderClass.getModifiers();
-
-        assertTrue(Modifier.isAbstract(classModifiers));
-    }
+//    @Test
+//    public void testOrderanIsAbstract() {
+//        int classModifiers = orderClass.getModifiers();
+//
+//        assertTrue(Modifier.isAbstract(classModifiers));
+//    }
 
     @Test
     public void testOrederankHasCheckoutMethod() throws Exception {

@@ -1,6 +1,6 @@
 package com.adprog6.endomie.order;
 
-public abstract class Cart{
+public class Cart{
 
     private OrderBehavior orderBehavior;
 
