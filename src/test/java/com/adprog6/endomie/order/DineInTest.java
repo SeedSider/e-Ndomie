@@ -21,7 +21,7 @@ public class DineInTest {
     }
 
     @Test
-    public void testDineInisOrderBehavior() {
+    public void testDineInIsOrderBehavior() {
         Collection<Type> classInterfaces = Arrays.asList(dineInClass.getInterfaces());
 
         assertTrue(classInterfaces.stream()
