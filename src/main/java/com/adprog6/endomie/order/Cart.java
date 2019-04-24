@@ -4,6 +4,15 @@ public class Cart{
 
     private OrderBehaviour orderBehaviour;
 
+    public Cart(){
+        setOrderBehavior(new DineIn());
+    }
+
+    public void setOrderBehavior(OrderBehaviour orderBehavior) {
+        this.orderBehaviour = orderBehavior;
+    }
+
+
     public void orderType() {
          orderBehaviour.orderType();
     }
