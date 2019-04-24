@@ -1,11 +1,10 @@
 image: gradle:4.6-jdk8-alpine
 
-#variables:
- # GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
-#  - chmod +x ./gradlew
 
 stages:
   - build
@@ -20,9 +19,7 @@ build:
 Test:
   stage: test
   script: 
-    - ./gradlew check
-    - ./gradlew jacocoTestReport
-    - cat build/reports/jacoco/test/html/index.html
+    - gradle check
 
 
 Deployment:
