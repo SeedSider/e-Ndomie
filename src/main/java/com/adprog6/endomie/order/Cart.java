@@ -3,6 +3,7 @@ package com.adprog6.endomie.order;
 public class Cart{
 
     private OrderBehaviour orderBehaviour;
+    /**private ArrayList<Indomie listIndomie =
 
     public Cart(){
         setOrderBehavior(new DineIn());
