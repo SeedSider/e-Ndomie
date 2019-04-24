@@ -9,15 +9,9 @@ before_script:
   - git commit
 
 stages:
-  - build
   - test
   - deploy
-
-build:
-  stage: build
-  script:
-  - gradle build
-      
+    
 Test:
   stage: test
   script: 
