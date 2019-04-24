@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e197b3a5-df68-463d-abf3-0968f41e8298" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/SigninController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/CustomNoodle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/noodles/IndomieGoreng.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/noodles/IndomieProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/noodles/IndomieRendang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/noodles/IndomieSoto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/BawangGoreng.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/Kornet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/Sosis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/Telur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/Topping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/toppings/ToppingDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/MultipleToppingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/noodles/IndomieGorengTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/noodles/IndomieRendangTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/noodles/IndomieSotoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/toppings/BawangGorengTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/toppings/KornetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/toppings/SosisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/diy/toppings/TelurTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/WebSecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="e197b3a5-df68-463d-abf3-0968f41e8298" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -115,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="663">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -242,6 +204,27 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -316,16 +299,15 @@
       <option name="presentableId" value="Default" />
       <updated>1555840325633</updated>
       <workItem from="1555840327274" duration="1258000" />
-      <workItem from="1556077678680" duration="6412000" />
+      <workItem from="1556077678680" duration="6656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7670000" />
+    <option name="totallyTimeSpent" value="7914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="663">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
