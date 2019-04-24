@@ -332,7 +332,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/e_ndomie$OrderSimulator.ic" NAME="OrderSimulator Coverage Results" MODIFIED="1556091916102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/e_ndomie$OrderSimulator.ic" NAME="OrderSimulator Coverage Results" MODIFIED="1556092318999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.adprog6.endomie.order.*</FILTER>
     </SUITE>
   </component>
