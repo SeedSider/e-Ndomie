@@ -22,9 +22,6 @@ public enum  ToppingDecorator {
 			case TELUR:
 				Topping = new Telur(Topping);
 				break;
-			default:
-				Topping = new BawangGoreng(Topping);
-				break;
 		}
 		return Topping;
 	}
