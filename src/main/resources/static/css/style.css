@@ -1,8 +1,5 @@
 body { padding: 2em; }
 
-.loginBtn loginBtn--google {
-    color : #BB3F30;
-}
 
 /* Shared */
 .loginBtn {
