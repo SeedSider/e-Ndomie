@@ -13,11 +13,11 @@ import org.junit.Test;
 
 public class CartTest {
 
-    private Class<?> orderanClass;
+    private Class<?> cartClass;
 
     @Before
     public void setUp() throws Exception {
-        orderanClass = Class.forName("com.adprog6.endomie.order.Cart");
+        cartClass = Class.forName("com.adprog6.endomie.order.Cart");
     }
 
 //    @Test
@@ -28,18 +28,9 @@ public class CartTest {
 //    }
 
     @Test
-    public void testOrederankHasCheckoutMethod() throws Exception {
-        Method swim = duckClass.getDeclaredMethod("swim");
-        int methodModifiers = checkout.getModifiers();
-
-        assertTrue(Modifier.isPublic(methodModifiers));
-        assertEquals("void", checkout.getGenericReturnType().getTypeName());
-    }
-
-    @Test
-    public void testOrderanHasOrderBehaviorSetter() throws Exception {
-        Method setOrderBehavior = orderanClass.getDeclaredMethod("setOrderBehavior",
-                OrderBehavior.class);
+    public void testOrderanHasOrderBehaviourSetter() throws Exception {
+        Method setOrderBehavior = cartClass.getDeclaredMethod("setOrderBehavior",
+                OrderBehaviour.class);
         Collection<Parameter> parameters = Arrays.asList(setOrderBehavior.getParameters());
         int methodModifiers = setOrderBehavior.getModifiers();
 

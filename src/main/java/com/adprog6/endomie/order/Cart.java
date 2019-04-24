@@ -2,16 +2,16 @@ package com.adprog6.endomie.order;
 
 public class Cart{
 
-    private OrderBehavior orderBehavior;
+    private OrderBehaviour orderBehaviour;
 
-    public void setOrderType() {
-        orderBehavior.setOrderType);
+    public void orderType() {
+         orderBehaviour.orderType();
     }
 
-    public void setOrderBehavior(OrderBehavior orderBehavior) {
-        this.orderBehavior = orderBehavior;
+    public void setOrderBehaviour(OrderBehaviour orderBehaviour) {
+        this.orderBehaviour = orderBehaviour;
     }
 
-    public void checkout(){}
+    //public void checkout(){}
 
 }

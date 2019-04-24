@@ -31,8 +31,8 @@ public class DineInTest {
     }
 
     @Test
-    public void testDineInOverrideSetOrderTypeMethod() throws Exception {
-        Method dinein = dineInClass.getDeclaredMethod("setOrderType");
+    public void testDineInOverrideOrderTypeMethod() throws Exception {
+        Method dinein = dineInClass.getDeclaredMethod("orderType");
         int methodModifiers = dinein.getModifiers();
 
         assertTrue(Modifier.isPublic(methodModifiers));

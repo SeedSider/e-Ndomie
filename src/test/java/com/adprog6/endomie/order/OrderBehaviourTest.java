@@ -1,4 +1,5 @@
 package com.adprog6.endomie.order;
+import org.junit.*;
 
 import static org.junit.Assert.assertTrue;
 
@@ -25,8 +26,8 @@ public class OrderBehaviourTest {
     }
 
     @Test
-    public void testOrderBehaviourHasOrderAbstractMethod() throws Exception {
-        Method order = orderBehaviourClass.getDeclaredMethod("order");
+    public void testOrderBehaviourHasOrderTypeAbstractMethod() throws Exception {
+        Method order = orderBehaviourClass.getDeclaredMethod("orderType");
         int methodModifiers = order.getModifiers();
 
         assertTrue(Modifier.isPublic(methodModifiers));

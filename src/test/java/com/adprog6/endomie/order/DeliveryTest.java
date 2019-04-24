@@ -1,7 +1,5 @@
 package com.adprog6.endomie.order;
 
-package com.adprog6.endomie.order;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -33,8 +31,8 @@ public class DeliveryTest {
     }
 
     @Test
-    public void testDeliveryOverrideSetOrderTypeMethod() throws Exception {
-        Method delivery = deliveryClass.getDeclaredMethod("setOrderType");
+    public void testDeliveryOverrideOrderTypeMethod() throws Exception {
+        Method delivery = deliveryClass.getDeclaredMethod("orderType");
         int methodModifiers = delivery.getModifiers();
 
         assertTrue(Modifier.isPublic(methodModifiers));
