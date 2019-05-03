@@ -19,9 +19,7 @@ build:
 Test:
   stage: test
   script: 
-    - ./gradlew check
-    - ./gradlew jacocoTestReport
-    - cat build/reports/jacoco/test/html/index.html
+    - gradle check
 
 
 Deployment:
