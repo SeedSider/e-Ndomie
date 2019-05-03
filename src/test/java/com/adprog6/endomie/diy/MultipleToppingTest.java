@@ -6,48 +6,59 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class MultipleToppingTest {
-	private CustomNoodle IndomieRendangTelurKornet;
-	private CustomNoodle IndomieSotoSosisBawangGoreng;
-	private CustomNoodle IndomieGorengTelurBawangGoreng;
-	private CustomNoodle IndomieSotoBawangGoreng;
+	private CustomNoodle indomieRendangTelurKornet;
+	private CustomNoodle indomieSotoSosisBawangGoreng;
+	private CustomNoodle indomieGorengTelurBawangGoreng;
+	private CustomNoodle indomieGorengJumboTelurSosis;
 
 	@Test
 	public void testIndomieRendangTelurKornetCost() {
-		IndomieRendangTelurKornet = IndomieProducer.INDOMIE_RENDANG.BaseNoodleCreator();
-		assertEquals(7500, IndomieRendangTelurKornet.cost());
+		indomieRendangTelurKornet = IndomieProducer.INDOMIE_RENDANG.BaseNoodleCreator();
+		assertEquals(7500, indomieRendangTelurKornet.cost());
 
-		IndomieRendangTelurKornet = ToppingDecorator.TELUR.addTopping(IndomieRendangTelurKornet);
-		assertEquals(9500, IndomieRendangTelurKornet.cost());
+		indomieRendangTelurKornet = ToppingDecorator.TELUR.addTopping(indomieRendangTelurKornet);
+		assertEquals(9500, indomieRendangTelurKornet.cost());
 
-		IndomieRendangTelurKornet = ToppingDecorator.KORNET.addTopping(IndomieRendangTelurKornet);
-		assertEquals(11000, IndomieRendangTelurKornet.cost());
+		indomieRendangTelurKornet = ToppingDecorator.KORNET.addTopping(indomieRendangTelurKornet);
+		assertEquals(11000, indomieRendangTelurKornet.cost());
 
 		assertEquals("Indomie Goreng Rasa Rendang + Telur + Kornet",
-				IndomieRendangTelurKornet.getDescription());
+				indomieRendangTelurKornet.getDescription());
 	}
 
 	@Test
 	public void testIndomieSotoSosisBawangGorengCost() {
-		IndomieSotoSosisBawangGoreng = IndomieProducer.INDOMIE_SOTO.BaseNoodleCreator();
-		assertEquals(7000, IndomieSotoSosisBawangGoreng.cost());
+		indomieSotoSosisBawangGoreng = IndomieProducer.INDOMIE_SOTO.BaseNoodleCreator();
+		assertEquals(7000, indomieSotoSosisBawangGoreng.cost());
 
-		IndomieSotoSosisBawangGoreng = ToppingDecorator.SOSIS.addTopping(IndomieSotoSosisBawangGoreng);
-		assertEquals(8000, IndomieSotoSosisBawangGoreng.cost());
+		indomieSotoSosisBawangGoreng = ToppingDecorator.SOSIS.addTopping(indomieSotoSosisBawangGoreng);
+		assertEquals(8000, indomieSotoSosisBawangGoreng.cost());
 
-		IndomieSotoSosisBawangGoreng = ToppingDecorator.BAWANG_GORENG.addTopping(IndomieSotoSosisBawangGoreng);
-		assertEquals(8500, IndomieSotoSosisBawangGoreng.cost());
+		indomieSotoSosisBawangGoreng = ToppingDecorator.BAWANG_GORENG.addTopping(indomieSotoSosisBawangGoreng);
+		assertEquals(8500, indomieSotoSosisBawangGoreng.cost());
 	}
 
 	@Test
 	public void testIndomieGorengTelurBawangGorengCost() {
-		IndomieGorengTelurBawangGoreng = IndomieProducer.INDOMIE_GORENG.BaseNoodleCreator();
-		assertEquals(7000, IndomieGorengTelurBawangGoreng.cost());
+		indomieGorengTelurBawangGoreng = IndomieProducer.INDOMIE_GORENG.BaseNoodleCreator();
+		assertEquals(7000, indomieGorengTelurBawangGoreng.cost());
 
-		IndomieGorengTelurBawangGoreng = ToppingDecorator.TELUR.addTopping(IndomieGorengTelurBawangGoreng);
-		assertEquals(9000, IndomieGorengTelurBawangGoreng.cost());
+		indomieGorengTelurBawangGoreng = ToppingDecorator.TELUR.addTopping(indomieGorengTelurBawangGoreng);
+		assertEquals(9000, indomieGorengTelurBawangGoreng.cost());
 
-		IndomieGorengTelurBawangGoreng = ToppingDecorator.BAWANG_GORENG.addTopping(IndomieGorengTelurBawangGoreng);
-		assertEquals(9500, IndomieGorengTelurBawangGoreng.cost());
+		indomieGorengTelurBawangGoreng = ToppingDecorator.BAWANG_GORENG.addTopping(indomieGorengTelurBawangGoreng);
+		assertEquals(9500, indomieGorengTelurBawangGoreng.cost());
 	}
 
+	@Test
+	public void testIndomieGorengJumboTelurSosisCost() {
+		indomieGorengJumboTelurSosis = IndomieProducer.INDOMIE_GORENG.BaseNoodleCreator();
+		assertEquals(10000, indomieGorengJumboTelurSosis.cost());
+
+		indomieGorengJumboTelurSosis = ToppingDecorator.TELUR.addTopping(indomieGorengJumboTelurSosis);
+		assertEquals(12000, indomieGorengJumboTelurSosis.cost());
+
+		indomieGorengJumboTelurSosis = ToppingDecorator.SOSIS.addTopping(indomieGorengJumboTelurSosis);
+		assertEquals(13000, indomieGorengJumboTelurSosis.cost());
+	}
 }
