@@ -1,5 +1,6 @@
 package com.adprog6.endomie.controllers;
 
+import com.adprog6.endomie.controllers.CartController;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -19,9 +20,9 @@ public class CartControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    public void cartContainsYourCartString() throws Exception {
+    public void testCart() throws Exception {
         mockMvc.perform(get("/cart"))
-                .andExpect(content().string(containsString("Your Cart")));
+                .andExpect(content().string(containsString("Cart")));
     }
 
 }
