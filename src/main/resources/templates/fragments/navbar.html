@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <th:block th:include="fragments/head :: headFragment"></th:block>
     <title>Title</title>
-    <link rel="stylesheet" th:href="@{/css/home.css}">
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" th:fragment="navbar">
@@ -17,16 +16,16 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="/menu">Menu</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">DIY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/checkout">Cart</a>
             </li>
             <li class="nav-item">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
