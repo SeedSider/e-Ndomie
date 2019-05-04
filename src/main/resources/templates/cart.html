@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <th:block th:include="fragments/head :: headFragment"></th:block>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+</head>
+<body>
+<!--navbar-->
+<div lang="en" th:replace="fragments/navbar :: navbar"> </div>
+
+<!--Menu Ordered-->
+<h1>Your Cart</h1>
+<div class="row">
+    <div class="col-sm" style="padding: 65px;">
+        <!--Iterasi menu & komposisi disini-->
+        <p>Make another one? Click here.</p>
+    </div>
+    <div class="col-sm" style="padding: 65px;">
+        <!--Iterasi harga & penjumlahan sementara disini-->\
+    </div>
+</div>
+
+<!--Order Type-->
+<div class="row">
+    <div class="col-sm" style="flex-grow: 0; padding: 65px">
+        <!--Choose & show order type here-->
+    </div>
+    <div class="col-sm" style="padding: 65px;">
+        <!--Conditional order type things-->
+    </div>
+</div>
+
+<!--Harga semuanya-->
+<div class="row">
+    <div class="col-sm" style="flex-grow: 0; padding: 65px">
+        <!-- if delivery show harga.deliveryservice-->
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div lang="en" th:replace="fragments/footer :: footer"> </div>
+
+</body>
+
+</html>
+

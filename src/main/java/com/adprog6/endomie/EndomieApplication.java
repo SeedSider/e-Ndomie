@@ -15,10 +15,5 @@ public class EndomieApplication {
     public static void main(String[] args) {
         SpringApplication.run(EndomieApplication.class, args);
     }
-
-    @RequestMapping(value = "/user")
-    public Principal user(Principal principal) {
-        return principal;
-    }
 }
 
