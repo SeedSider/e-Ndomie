@@ -19,6 +19,8 @@ public enum IndomieProducer {
 			case INDOMIE_RENDANG:
 				BaseNoodle = new IndomieRendang();
 				break;
+			default:
+				BaseNoodle = new IndomieDefault();
 		}
 		return BaseNoodle;
 	}
