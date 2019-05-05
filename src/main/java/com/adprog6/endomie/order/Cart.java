@@ -1,9 +1,11 @@
 package com.adprog6.endomie.order;
 
+import com.adprog6.endomie.diy.CustomNoodle;
+
 public class Cart{
 
     private OrderBehaviour orderBehaviour;
-    /**private ArrayList<Indomie listIndomie =*/
+    private ArrayList<CustomNoodle listIndomie;
 
     public Cart(){
         setOrderBehavior(new DineIn());
