@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class SosisTest {
-	private Sosis indomieRendangSosis;
+	private Topping indomieRendangSosis;
 
 	@Before
 	public void setUp() {

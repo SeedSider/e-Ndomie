@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TelurTest {
-	private Telur indomieGorengTelur;
+	private Topping indomieGorengTelur;
 
 	@Before
 	public void setUp() {
