@@ -2,8 +2,7 @@ package com.adprog6.endomie.diy.toppings;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 
-public class Telur extends CustomNoodle {
-	CustomNoodle customNoodle;
+public class Telur extends Topping {
 
 	public Telur(CustomNoodle customNoodle) {
 		this.customNoodle = customNoodle;

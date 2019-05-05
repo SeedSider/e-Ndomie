@@ -17,7 +17,7 @@ public class DineInTest {
 
     @Before
     public void setUp() throws Exception {
-        dineInClass = Class.forName("id.ac.ui.cs.advprog.tutorial1.strategy.DineIn");
+        dineInClass = Class.forName("com.adprog6.endomie.order.DineIn");
     }
 
     @Test

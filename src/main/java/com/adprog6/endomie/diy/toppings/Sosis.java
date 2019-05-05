@@ -2,8 +2,7 @@ package com.adprog6.endomie.diy.toppings;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 
-public class Sosis extends CustomNoodle {
-	CustomNoodle customNoodle;
+public class Sosis extends Topping {
 
 	public Sosis(CustomNoodle customNoodle) {
 		this.customNoodle = customNoodle;

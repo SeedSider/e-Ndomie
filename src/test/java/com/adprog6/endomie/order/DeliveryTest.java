@@ -17,7 +17,7 @@ public class DeliveryTest {
 
     @Before
     public void setUp() throws Exception {
-        deliveryClass = Class.forName("id.ac.ui.cs.advprog.tutorial1.strategy.Delivery");
+        deliveryClass = Class.forName("com.adprog6.endomie.order.Delivery");
     }
 
     @Test

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
+    <th:block th:include="fragments/head :: headFragment"></th:block>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+<body>
+<!--navbar-->
+<div lang="en" th:replace="fragments/navbar :: navbar"> </div>
+
+<!--jumbotron-->
+<div class="jumbotron jumbotron-fluid" style="background-image:url('https://i.imgur.com/gIlevmh.jpg'); width: 100%; height: 100%">
+    <div class="container">
+        <h1 class="display-4" style="color: white; font-weight: bold;">Fried Noodle</h1>
+    </div>
+</div>
+
+<!--menus-->
+<div class="row" style="padding: 20px 300px 10px 300px">
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>original</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>rendang</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>ayam geprek hype abis</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+</div>
+
+<!--jumbotron-->
+<div class="jumbotron jumbotron-fluid" style="background-image:url('https://i2.wp.com/fuelednaturally.net/wp-content/uploads/2019/01/ramen-2.jpg?fit=1024%2C683&ssl=1'); width: 100%; height: 100%">
+    <div class="container">
+        <h1 class="display-4" style="color: white; font-weight: bold;">Boiled Noodle</h1>
+    </div>
+</div>
+
+<!--menus-->
+<div class="row" style="padding: 20px 300px 10px 300px">
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>original</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>rendang</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+    <div class="col-sm" style="margin-left: 50px">
+        <h2>ayam geprek hype abis</h2>
+        <p>telor...........10k <br> ayam...........10k <br> sawi...........10k <br> sosis...........10k <br> kol goreng...........10k</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div lang="en" th:replace="fragments/footer :: footer"> </div>
+
+
+</body>
+</html>
