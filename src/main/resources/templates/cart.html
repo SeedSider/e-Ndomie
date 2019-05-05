@@ -13,11 +13,12 @@
 <!--navbar-->
 <div lang="en" th:replace="fragments/navbar :: navbar"> </div>
 
-<!--checkout-->
+<!--cartt-->
 <div class="main">
     <h1>Cart</h1>
     <h2 class="sub-heading">This is your list of good stuffs.</h2>
 
+    <!--loop json dari diy here-->
     <section class="shopping-cart">
         <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
 
@@ -66,12 +67,23 @@
                 <button class="_btn checkout-btn entypo-forward">Checkout</button>
             </div>
         </footer>
-
     </section>
+
+    <!--pick behaviour order-->
+    <section>
+    <p>Delivery Type:</p>
+    <button>Delivery</button> <button>DineIn</button>
+    </section>
+
 </div>
 
 </body>
 <script>
+    <!--fungsi yang harus dibuat-->
+    function choosekDelivery(){}
+    function chooseDineIn(){}
+    function checkout(){}
+
     function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
