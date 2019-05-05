@@ -51,6 +51,9 @@ public enum IndomieProducer {
 			case INDOMIE_KARI_AYAM_DOUBLE:
 				BaseNoodle = new IndomieKariAyamDouble();
 				break;
+			default:
+				BaseNoodle = new IndomieDefault();
+				break;
 		}
 		return BaseNoodle;
 	}
