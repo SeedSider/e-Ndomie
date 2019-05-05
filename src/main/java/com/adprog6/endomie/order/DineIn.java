@@ -2,7 +2,7 @@ package com.adprog6.endomie.order;
 
 public class DineIn implements OrderBehaviour {
     private String tableNumber;
-    private float serviceFeePercentage=0.15;
+    private double serviceFeePercentage=0.2;
 
     @Override
     public void orderType() { System.out.println("Dine In");};
@@ -11,7 +11,7 @@ public class DineIn implements OrderBehaviour {
         this.tableNumber=tableNumber;
     }
 
-    public float getServiceFeePercentage() {
+    public double getServiceFeePercentage() {
         return serviceFeePercentage;
     }
 }

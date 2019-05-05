@@ -7,7 +7,7 @@
     <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
     <th:block th:include="fragments/head :: headFragment"></th:block>
     <title>Title</title>
-    <link rel="stylesheet" th:href="@{/css/checkout.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
 </head>
 <body>
 <!--navbar-->
@@ -15,8 +15,10 @@
 
 <!--checkout-->
 <div class="main">
-    <h1>Shopping cart</h1>
-    <h2 class="sub-heading">Free shipping from $100!</h2>
+    <h1>Invoice</h1>
+    <h2 class="sub-heading">Your order has been placed!</h2>
+    <h2 class="sub-heading">Will be delivered to: </h2>
+
 
     <section class="shopping-cart">
         <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
@@ -51,11 +53,11 @@
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column shipping" id="shippingCtr">
-                <div class="cart-totals-key">Shipping</div>
+                <div class="cart-totals-key">Shipping Fee</div>
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column taxes" id="taxesCtr">
-                <div class="cart-totals-key">Taxes (6%)</div>
+                <div class="cart-totals-key">Taxes (10%)</div>
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column total" id="totalCtr">

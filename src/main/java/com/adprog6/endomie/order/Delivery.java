@@ -2,7 +2,7 @@ package com.adprog6.endomie.order;
 
 public class Delivery implements OrderBehaviour {
     private String deliveryAddress;
-    private float deliveryFeePercentage=0.2;
+    private double deliveryFeePercentage=0.3;
 
     @Override
     public void orderType() { System.out.println("Delivery");};
@@ -11,5 +11,5 @@ public class Delivery implements OrderBehaviour {
         this.deliveryAddress = address;
     }
 
-    public float getDeliveryFeePercentage(){return deliveryFeePercentage;}
+    public double getDeliveryFeePercentage(){return deliveryFeePercentage;}
 }
