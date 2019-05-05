@@ -29,7 +29,7 @@ HELP.md
 ### VS Code ###
 .vscode/
 
-.gradle
+.gradle/
 /build/
 
 # Ignore Gradle GUI config
@@ -43,3 +43,51 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+### Gradle ###
+# Exclude Folder List #
+.gradle/
+build/
+
+
+### Eclipse ###
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+### IntelliJ ###
+*.iml
+*.ipr
+*.iws
+.idea/
+
+### SVN ###
+.svn/
+
+### Maven ###
+target/
+
+/bin
