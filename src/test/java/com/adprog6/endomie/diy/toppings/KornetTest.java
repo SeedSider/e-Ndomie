@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class KornetTest {
-	private Kornet indomieRendangKornet;
+	private Topping indomieRendangKornet;
 
 	@Before
 	public void setUp() {
