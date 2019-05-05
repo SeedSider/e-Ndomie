@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e197b3a5-df68-463d-abf3-0968f41e8298" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieDebuggingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieMappingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CartHttpRequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeHttpRequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/MenuControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/MenuHttpRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CheckoutHttpRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/DIYHttpRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/SignInHttpRequestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="113" />
+    <option name="myElementSize" value="100" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -66,30 +61,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieMappingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieDebuggingTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeHttpRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
@@ -116,8 +87,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CartHttpRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="261">
               <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/DIYHttpRequestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/SignInHttpRequestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="26" column="87" selection-start-line="26" selection-start-column="87" selection-end-line="26" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CheckoutHttpRequestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,23 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -192,6 +187,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeHttpRequestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/MenuHttpRequestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CartHttpRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/SignInHttpRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/DIYHttpRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CheckoutHttpRequestTest.java" />
       </list>
     </option>
   </component>
@@ -419,14 +417,11 @@
       <workItem from="1556879962631" duration="8000" />
       <workItem from="1556951159132" duration="498000" />
       <workItem from="1556951783767" duration="3448000" />
-      <workItem from="1557023605192" duration="7072000" />
+      <workItem from="1557023605192" duration="8018000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EndomieApplicationTests - 2019.05.05 at 10h 10m 40s.xml">
-      <configuration name="EndomieApplicationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EndomieApplicationTests - 2019.05.05 at 12h 51m 47s.xml">
       <configuration name="EndomieApplicationTests" configurationId="JUnit" />
     </history-entry>
@@ -454,12 +449,16 @@
     <history-entry file="All_in_endomie_test_(1) - 2019.05.05 at 13h 55m 06s.xml">
       <configuration name="All in endomie.test (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_endomie_test_(1) - 2019.05.05 at 14h 46m 37s.xml">
+      <configuration name="All in endomie.test (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22769000" />
+    <option name="totallyTimeSpent" value="23715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2852349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -471,14 +470,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38526914" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38526914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3268206" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32577905" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32577905" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
@@ -490,7 +489,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" visible="true" weight="0.23154363" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" visible="true" weight="0.24966443" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -507,7 +506,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/endomie$All_in_endomie_test__1_.ic" NAME="All in endomie.test (1) Coverage Results" MODIFIED="1557039290294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/endomie$All_in_endomie_test__1_.ic" NAME="All in endomie.test (1) Coverage Results" MODIFIED="1557046478065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/endomie$EndomieApplicationTests.ic" NAME="EndomieApplicationTests Coverage Results" MODIFIED="1557038452013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.adprog6.endomie.*</FILTER>
     </SUITE>
@@ -777,19 +776,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeHttpRequestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="13" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CartHttpRequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="261">
           <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -806,8 +795,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/HomeHttpRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="13" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/SignInHttpRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="87" selection-start-line="26" selection-start-column="87" selection-end-line="26" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/DIYHttpRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CheckoutHttpRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
