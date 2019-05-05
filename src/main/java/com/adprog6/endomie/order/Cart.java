@@ -15,7 +15,6 @@ public class Cart{
         this.orderBehaviour = orderBehavior;
     }
 
-
     public void orderType() {
          orderBehaviour.orderType();
     }
@@ -23,7 +22,5 @@ public class Cart{
     public void setOrderBehaviour(OrderBehaviour orderBehaviour) {
         this.orderBehaviour = orderBehaviour;
     }
-
-    //public void checkout(){}
 
 }
