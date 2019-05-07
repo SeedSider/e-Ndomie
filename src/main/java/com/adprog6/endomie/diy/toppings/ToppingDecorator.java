@@ -6,7 +6,8 @@ public enum  ToppingDecorator {
 	BAWANG_GORENG,
 	KORNET,
 	SOSIS,
-	TELUR;
+	TELUR,
+	KEJU;
 
 	public CustomNoodle addTopping(CustomNoodle Topping) {
 		switch (this) {
@@ -21,6 +22,9 @@ public enum  ToppingDecorator {
 				break;
 			case TELUR:
 				Topping = new Telur(Topping);
+				break;
+			case KEJU:
+				Topping = new Keju(Topping);
 				break;
 		}
 		return Topping;
