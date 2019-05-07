@@ -25,4 +25,8 @@ public class Cart{
         this.orderBehaviour = orderBehaviour;
     }
 
+    public void addIndomie(CustomNoodle myIndomie){
+        listIndomie.add(myIndomie);
+    }
+
 }
