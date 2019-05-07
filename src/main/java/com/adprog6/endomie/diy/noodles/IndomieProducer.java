@@ -8,7 +8,7 @@ public enum IndomieProducer {
 	INDOMIE_RENDANG;
 
 	public CustomNoodle BaseNoodleCreator() {
-		CustomNoodle BaseNoodle = null;
+		CustomNoodle BaseNoodle;
 		switch (this) {
 			case INDOMIE_SOTO:
 				BaseNoodle = new IndomieSoto();
@@ -21,6 +21,7 @@ public enum IndomieProducer {
 				break;
 			default:
 				BaseNoodle = new IndomieDefault();
+				break;
 		}
 		return BaseNoodle;
 	}
