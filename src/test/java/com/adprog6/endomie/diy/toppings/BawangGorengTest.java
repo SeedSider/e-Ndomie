@@ -1,5 +1,6 @@
 package com.adprog6.endomie.diy.toppings;
 
+import com.adprog6.endomie.diy.CustomNoodle;
 import com.adprog6.endomie.diy.noodles.IndomieSoto;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class BawangGorengTest {
-	private BawangGoreng indomieSotoBawangGoreng;
+	private Topping indomieSotoBawangGoreng;
 
 	@Before
 	public void setUp() {
