@@ -21,7 +21,7 @@ public class CartTest {
     }
 
     @Test
-    public void testOrderanHasOrderBehaviourSetter() throws Exception {
+    public void testCartHasOrderBehaviourSetter() throws Exception {
         Method setOrderBehavior = cartClass.getDeclaredMethod("setOrderBehavior",
                 OrderBehaviour.class);
         Collection<Parameter> parameters = Arrays.asList(setOrderBehavior.getParameters());
@@ -29,5 +29,4 @@ public class CartTest {
 
         assertTrue(Modifier.isPublic(methodModifiers));
     }
-
 }

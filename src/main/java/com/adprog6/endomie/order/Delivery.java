@@ -11,5 +11,5 @@ public class Delivery implements OrderBehaviour {
         this.deliveryAddress = address;
     }
 
-    public double getDeliveryFeePercentage(){return deliveryFeePercentage;}
+    public double getDeliveryFeePercentage(){return deliveryFeePercentage;};
 }
