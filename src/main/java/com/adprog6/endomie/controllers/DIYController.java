@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-public class DiyController {
+public class DIYController {
 
 	@GetMapping("/diy")
 	public String diy() {
