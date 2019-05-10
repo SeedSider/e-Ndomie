@@ -4,7 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class DiyController {
+public class DIYController {
+
 	@GetMapping("/diy")
 	public String diy() {
 		return "diy";
