@@ -16,7 +16,7 @@ public enum IndomieProducer {
 	INDOMIE_KARI_AYAM_DOUBLE;
 
 	public CustomNoodle BaseNoodleCreator() {
-		CustomNoodle BaseNoodle = null;
+		CustomNoodle BaseNoodle;
 		switch (this) {
 			case INDOMIE_SOTO:
 				BaseNoodle = new IndomieSoto();
