@@ -2,6 +2,7 @@ package com.adprog6.endomie.diy.model;
 
 public class Topping {
 
+	private String id;
 	private String name;
 	private String description;
 	private int cost;
@@ -9,9 +10,15 @@ public class Topping {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getDescription() {
@@ -30,7 +37,4 @@ public class Topping {
 		this.cost = cost;
 	}
 
-	public String toString() {
-		return "topping [name=" + name + ", description=" + description + ", cost=" + cost;
-	}
 }
