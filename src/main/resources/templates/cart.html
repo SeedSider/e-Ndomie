@@ -46,6 +46,7 @@
             </script>
 
         </ol>
+    </section>
 
         <!--pick behaviour order-->
         <section>
@@ -56,13 +57,13 @@
             </div>
 
             <div id="deliveryAddres" class="form-group" style="display:none;">
-                <label for="comment">Delivery Address:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <label for="deliveryAddres">Delivery Address:</label>
+                <textarea class="form-control" rows="5" id="deliveryAddressTextArea"></textarea>
             </div>
 
-            <div id="tableNumber" class="form-group" style="display:none;"ss>
-                <label for="usr">Table Number:</label>
-                <input type="text" class="form-control" id="usr">
+            <div id="tableNumber" class="form-group" style="display:none;">
+                <label for="tableNumber">Table Number:</label>
+                <input type="text" class="form-control" id="tableNumberTextArea">
             </div>
 
         </section>
@@ -73,7 +74,7 @@
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column shipping" id="shippingCtr">
-                <div class="cart-totals-key">Shipping Fee</div>
+                <div id= "conditionalFee"class="cart-totals-key">Shipping Fee</div>
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column taxes" id="taxesCtr">
@@ -88,7 +89,6 @@
                 <button class="_btn checkout-btn entypo-forward" href="/checkout">Checkout</button>
             </div>
         </footer>
-    </section>
 
 
 </div>
@@ -109,6 +109,18 @@
         $("#tableNumber").show();
     });
 
+    $("saveDelivery").click(function(){
+        var deliveryAddress = $(#deliveryAddressTextArea).value;
+        $("#deliveryAddres").hide();
+        $("#report").
+    })
+
+
+    $("saveDineIn").click(function(){
+        var tableNumber = $(#tableNumberTextArea).value;
+        $("#tableNumber").hide();
+        $("#report").show();
+    })
 
     // function chooseDineIn(){}
     // function checkout(){}
@@ -148,14 +160,7 @@
             {
                 "name" : "Tap Water",
                 "price" : "0.99",
-                "img" : "http://shechive.files.wordpress.com/2011/08/odd-products-28.jpg?w=159&h=159",
-                "desc" : "You decide"
-            },
-            {
-                "name" : "Social Shower Curtain",
-                "price" : "40.00",
-                "img" : "http://media-cache-ec2.pinimg.com/550x/c7/02/8f/c7028f260ae030ba66494ee75407192f.jpg",
-                "desc" : "Always stay up-to-date with this very useless shower curtain!"
+                "description" : "You decide"
             },
         ],
 
