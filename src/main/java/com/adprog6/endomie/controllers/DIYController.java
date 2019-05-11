@@ -8,15 +8,12 @@ import com.adprog6.endomie.diy.noodles.IndomieProducer;;
 import com.adprog6.endomie.diy.toppings.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Controller
 @RestController
 public class DIYController {
 	private static Map<String, Indomie> indomieRepo = new HashMap<>();
@@ -90,8 +87,4 @@ public class DIYController {
 			return new ResponseEntity<>(toppingRepo.values(), HttpStatus.OK);
 		}
 
-	@GetMapping("/diy")
-	public String diy() {
-		return "diy";
-	}
 }
