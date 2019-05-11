@@ -3,6 +3,7 @@ package com.adprog6.endomie.diy.model;
 
 public class Indomie {
 
+	private String id;
 	private String name;
 	private String description;
 	private int cost;
@@ -10,9 +11,15 @@ public class Indomie {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getDescription() {
@@ -29,9 +36,5 @@ public class Indomie {
 
 	public void setCost(int cost) {
 		this.cost = cost;
-	}
-
-	public String toString() {
-		return "indomie [name=" + name + ", description=" + description + ", cost=" + cost;
 	}
 }
