@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
     <th:block th:include="fragments/head :: headFragment"></th:block>
-    <title>Title</title>
+    <title>E-ndomie</title>
     <link rel="stylesheet" th:href="@{/css/cart.css}">
+    <script src="jquery-3.4.0.min.js"></script>
 </head>
 <body>
 <!--navbar-->
@@ -46,6 +47,26 @@
 
         </ol>
 
+        <!--pick behaviour order-->
+        <section>
+            <p>Delivery Type:</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button id="deliveryButton" type="button" class="btn btn-secondary">Delivery</button>
+                <button id="dineInButton" type="button" class="btn btn-secondary">Dine In</button>
+            </div>
+
+            <div id="deliveryAddres" class="form-group" style="display:none;">
+                <label for="comment">Delivery Address:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <div id="tableNumber" class="form-group" style="display:none;"ss>
+                <label for="usr">Table Number:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+
+        </section>
+
         <footer class="_grid cart-totals">
             <div class="_column subtotal" id="subtotalCtr">
                 <div class="cart-totals-key">Subtotal</div>
@@ -69,20 +90,28 @@
         </footer>
     </section>
 
-    <!--pick behaviour order-->
-    <section>
-    <p>Delivery Type:</p>
-    <button>Delivery</button> <button>DineIn</button>
-    </section>
 
 </div>
 
 </body>
 <script>
     <!--fungsi yang harus dibuat-->
-    function choosekDelivery(){}
-    function chooseDineIn(){}
-    function checkout(){}
+
+    <!--CLICK DELIVERY BUTTON-->
+    $("#deliveryButton").click(function(){
+        $("#tableNumber").hide();
+        $("#deliveryAddres").show();
+    });
+
+    <!--click dine in button-->
+    $("#dineInButton").click(function(){
+        $("#deliveryAddress").hide();
+        $("#tableNumber").show();
+    });
+
+
+    // function chooseDineIn(){}
+    // function checkout(){}
 
     function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
@@ -128,12 +157,6 @@
                 "img" : "http://media-cache-ec2.pinimg.com/550x/c7/02/8f/c7028f260ae030ba66494ee75407192f.jpg",
                 "desc" : "Always stay up-to-date with this very useless shower curtain!"
             },
-            {
-                "name" : "Self stirring mug",
-                "img" : "https://i.dailymail.co.uk/i/pix/2012/09/16/article-2204256-15053801000005DC-304_634x524.jpg",
-                "price" : "12.35",
-                "desc" : "Don't get tired!"
-            }
         ],
 
         removeProduct: function () {
