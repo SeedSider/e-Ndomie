@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
+    <th:block th:include="fragments/head :: headFragment"></th:block>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/diy.css}">
+    <script th:src="@{/js/diy.js}"></script>
+</head>
+<body>
+<!--navbar-->
+<div lang="en" th:replace="fragments/navbar :: navbar"> </div>
+
+<!--jumbotron-->
+<div class="jumbotron jumbotron-fluid" style="background-image:url('https://i.imgur.com/gIlevmh.jpg'); width: 100%; height: 100%">
+    <div class="container">
+        <h1 class="display-4" style="color: white; font-weight: bold;">Do It Yourself!</h1>
+    </div>
+</div>
+<div id = "productsJson"></div>
+<!--card shop-->
+<h1>Pilih varian Indomie</h1>
+<br>
+<div class="row">
+    <div class="col-sm">
+        <div class="card">
+            <img src="http://www.mandirimco.co.id/web/image/product.product/557/image" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Goreng Original</h3>
+            <p class="price">Rp.3.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img src="http://www.mandirimco.co.id/web/image/product.product/559/image" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Kuah Kari Ayam</h3>
+            <p class="price">Rp.3.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img src="http://www.mandirimco.co.id/web/image/product.product/553/image" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Kuah Ayam Bawang</h3>
+            <p class="price">Rp.3.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//91/MTA-3026439/indomie_indomie-goreng-rasa-ayam-geprek--85-gr-_full02.jpg" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Goreng Ayam Geprek</h3>
+            <p class="price">Rp.5.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img src="http://cdn.elevenia.co.id/g/8/0/5/5/2/3/18805523_B_V203.jpg" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Goreng Sambal Matah</h3>
+            <p class="price">Rp.4.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img src="https://cf.shopee.co.id/file/a6dcc9e295ddef9aaff6873dec03231a" alt="Denim Jeans" style="width:100%">
+            <h3>Indomie Goreng Rendang</h3>
+            <p class="price">Rp.4.000,00</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+</div>
+</html>

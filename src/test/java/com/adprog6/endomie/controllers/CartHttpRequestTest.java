@@ -23,8 +23,8 @@ public class CartHttpRequestTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void cartTest() throws Exception {
+    public void homeTest() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/cart",
-                String.class)).contains("Cart");
+                String.class)).contains("cart");
     }
 }
