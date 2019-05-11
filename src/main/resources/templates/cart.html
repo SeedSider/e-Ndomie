@@ -18,7 +18,7 @@
 <div class="main">
     <h1>Cart</h1>
     <h2 class="sub-heading">This is your list of good stuffs.</h2>
-
+</div>
     <!--loop json dari diy here-->
     <section class="shopping-cart">
         <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
@@ -86,7 +86,7 @@
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column checkout">
-                <button class="_btn checkout-btn entypo-forward" href="/checkout">Checkout</button>
+                <button class="_btn checkout-btn entypo-forward" th:action = "@{/checkout}">Checkout</button>
             </div>
         </footer>
 
@@ -160,6 +160,7 @@
             {
                 "name" : "Tap Water",
                 "price" : "0.99",
+                "img" : "http://fillmurray.com/g/159/159",
                 "description" : "You decide"
             },
         ],
