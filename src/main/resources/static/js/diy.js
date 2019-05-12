@@ -1,12 +1,7 @@
 $(document).ready(function(){
-    // $.getJSON("http://localhost:8080/diy/noodles", function(result){
-    //     $.each(result, function(key,value) {
-    //         $("#productsJson").append(value.name+" "+value.description+" " + value.cost);
-    //     });
-    // });
 
     $.ajax({
-        url : "http://localhost:8080/diy/noodles",
+        url : "http://e-ndomie.herokuapp.com/diy/noodles",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
@@ -29,7 +24,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url : "http://localhost:8080/diy/toppings",
+        url : "http://e-ndomie.herokuapp.com/diy/toppings",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
