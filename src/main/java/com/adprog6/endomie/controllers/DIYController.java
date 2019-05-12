@@ -4,7 +4,7 @@ import com.adprog6.endomie.diy.CustomNoodle;
 import com.adprog6.endomie.diy.model.Indomie;
 import com.adprog6.endomie.diy.model.Topping;
 import com.adprog6.endomie.diy.noodles.IndomieDefault;
-import com.adprog6.endomie.diy.noodles.IndomieProducer;;
+import com.adprog6.endomie.diy.noodles.IndomieProducer;
 import com.adprog6.endomie.diy.toppings.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -56,6 +56,7 @@ public class DIYController {
 		topping1.setName("Bawang Goreng");
 		topping1.setDescription(bawangGoreng.getDescription());
 		topping1.setCost(bawangGoreng.cost());
+		topping1.setThumbnail("https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/sasefoto/original/30836_nikmatnya-sarapan-mudah-dengan-resep-skotel-roti-sederhana-ini.JPG");
 		toppingRepo.put(topping1.getId(), topping1);
 
 		Topping topping2 = new Topping();
@@ -63,6 +64,7 @@ public class DIYController {
 		topping2.setName("Kornet");
 		topping2.setDescription(kornet.getDescription());
 		topping2.setCost(kornet.cost());
+		topping2.setThumbnail("https://img-k.okeinfo.net/content/2018/04/05/298/1882398/apakah-boleh-makan-kornet-langsung-tanpa-dimasak-lagi-ketahui-jawabannya-di-sini-0U3lF6reHB.jpg");
 		topping2.setId("2");
 		toppingRepo.put(topping2.getId(), topping2);
 
@@ -72,6 +74,7 @@ public class DIYController {
 		topping3.setDescription(sosis.getDescription());
 		topping3.setCost(sosis.cost());
 		topping3.setId("3");
+		topping3.setThumbnail("https://res.cloudinary.com/dk0z4ums3/image/upload/v1537955499/attached_image/tips-sehat-mengonsumsi-sosis-dan-makanan-olahan-lain-alodokter.jpg");
 		toppingRepo.put(topping3.getId(), topping3);
 
 		Topping topping4 = new Topping();
@@ -80,6 +83,7 @@ public class DIYController {
 		topping4.setDescription(telur.getDescription());
 		topping4.setCost(telur.cost());
 		topping4.setId("4");
+		topping4.setThumbnail("https://s2.bukalapak.com/img/7845937291/w-300/TELUR_AYAM_NEGRI_CURAH.jpg.webp");
 		toppingRepo.put(topping4.getId(), topping4);
 	}
 	@RequestMapping(value = "diy/noodles")

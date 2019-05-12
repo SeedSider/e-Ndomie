@@ -17,13 +17,36 @@ $(document).ready(function(){
                 + "<h3>" + indomie_list[i].name + "</h3>" + '<p class="price">Rp'+ indomie_list[i].cost +  ",00</p>"
                 + "<p>" + indomie_list[i].description + "</p>" + "<p><button>Add to Cart</button></p>"
                 + "</div></div>";
-                $("#productsJson").append(content);
+                $("#indomieJson").append(content);
             };
         },
 
         error: function (error) {
             var content = "<div>" + "Failed" +"</div>";
-            $('#productsJson').append(table_content);
+            $('#indomieJson').append(table_content);
+        },
+
+    });
+
+    $.ajax({
+        url : "http://localhost:8080/diy/toppings",
+        dataType : "json",
+        success : function (datajson) {
+            console.log("masuk");
+            var topping_list = datajson;
+            for(var i = 0; i < topping_list.length; i++) {
+                var content = "<div class=\"col-sm\">" +
+                    "<div class=\"card\">" + '<img src="' + topping_list[i].thumbnail + '" class="img-fluid rounded mx-auto d-block">'
+                    + "<h3>" + topping_list[i].name + "</h3>" + '<p class="price">Rp'+ topping_list[i].cost +  ",00</p>"
+                    + "<p><button>Add to Cart</button></p>"
+                    + "</div></div>";
+                $("#toppingJson").append(content);
+            };
+        },
+
+        error: function (error) {
+            var content = "<div>" + "Failed" +"</div>";
+            $('#toppingJson').append(table_content);
         },
 
     });

@@ -11,7 +11,11 @@
     font-size: 22px;
 }
 
-.menu-container #productsJson{
+.menu-container #indomieJson {
+    display: flex;
+}
+
+.topping-container #toppingJson {
     display: flex;
 }
 
