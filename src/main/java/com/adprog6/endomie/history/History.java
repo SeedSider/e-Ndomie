@@ -1,16 +1,9 @@
 package com.adprog6.endomie.history;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 import com.adprog6.endomie.order.Cart;
-import java.util.HashMap;
-import java.util.Map;
-
-
 
 @Entity
 public class History {
@@ -18,21 +11,34 @@ public class History {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int index;
 
-    private static Map<Integer, Cart> history;
+    @Column
+    private String username;
 
-    public void addHistory(Cart newCart) {
-        history.put(index, newCart);
+//    @OneToOne
+//    @JoinColumn(name = "cart_id")
+//    private Cart cart;
+
+    public int getIndex() {
+        return index;
     }
 
-    public Map<Integer, Cart> getAllHistory() {
-        return history;
+    public void setIndex(int index) {
+        this.index = index;
     }
 
-    public Cart getHistory(int index) {
-        return history.get(index);
+    public String getUsername() {
+        return username;
     }
 
-    public void updateHistory(int index, Cart newHistory) {
-        history.replace(index, newHistory);
+    public void setUsername(String username) {
+        this.username = username;
     }
+
+//    public Cart getCart() {
+//        return cart;
+//    }
+//
+//    public void setCart(Cart cart) {
+//        this.cart = cart;
+//    }
 }
