@@ -11,6 +11,11 @@
     font-size: 22px;
 }
 
+.menu-container #productsJson{
+    display: flex;
+}
+
+
 .card button {
     border: none;
     outline: 0;
