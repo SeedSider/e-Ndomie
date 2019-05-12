@@ -1,23 +1,27 @@
-package com.adprog6.endomie.models;
-import org.springframework.stereotype.Repository;
+package com.adprog6.endomie.history;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 
 import com.adprog6.endomie.order.Cart;
 import java.util.HashMap;
 import java.util.Map;
 
-@Repository
+
+
+@Entity
 public class History {
-    private static Map<Integer, Cart> history;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int index;
 
-    public History() {
-        history = new HashMap<>();
-        index = 0;
-    }
+    private static Map<Integer, Cart> history;
 
     public void addHistory(Cart newCart) {
         history.put(index, newCart);
-        index++;
     }
 
     public Map<Integer, Cart> getAllHistory() {

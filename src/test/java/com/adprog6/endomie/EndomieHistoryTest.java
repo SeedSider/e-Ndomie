@@ -1,5 +1,5 @@
 package com.adprog6.endomie;
-import com.adprog6.endomie.models.History;
+import com.adprog6.endomie.history.History;
 import com.adprog6.endomie.order.Cart;
 import org.junit.Assert;
 import org.junit.Before;
