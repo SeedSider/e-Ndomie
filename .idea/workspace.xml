@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e197b3a5-df68-463d-abf3-0968f41e8298" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/exception/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/history.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,14 +37,14 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7472354">
+    <splitter split-orientation="horizontal" split-proportion="0.5012531">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/history/History.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="7" />
+                <state relative-caret-position="236">
+                  <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#443#444#0" expanded="true" />
@@ -63,21 +63,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                  <folding>
-                    <element signature="e#563#564#0" expanded="true" />
-                    <element signature="e#632#633#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="85">
+                  <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -94,10 +81,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
+                <state relative-caret-position="136">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="62" />
                   <folding>
-                    <element signature="imports" expanded="true" />
                     <element signature="e#718#719#0" expanded="true" />
                     <element signature="e#754#755#0" expanded="true" />
                     <element signature="e#1110#1111#0" expanded="true" />
@@ -148,34 +134,16 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+                <state relative-caret-position="34">
+                  <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/templates/history.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -184,6 +152,26 @@
                     <element signature="imports" expanded="true" />
                   </folding>
                 </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-3592" />
               </provider>
             </entry>
           </file>
@@ -293,7 +281,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/controllers/CartControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java" />
         <option value="$PROJECT_DIR$/.idea/gradle.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/Repository/HistoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/models/History.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/repositories/HistoryRepository.java" />
@@ -304,6 +291,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/history.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/exception/ResourceNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" />
       </list>
     </option>
   </component>
@@ -428,6 +416,27 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -444,7 +453,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557673566103" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557709327162" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -474,7 +483,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EndomieApplication">
+  <component name="RunManager" selected="JUnit.EndomieHistoryTest">
     <configuration name="EndomieApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adprog6.endomie.EndomieApplication" />
       <module name="com.example.endomie.main" />
@@ -543,10 +552,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EndomieHistoryTest" />
         <item itemvalue="Application.EndomieApplication" />
         <item itemvalue="JUnit.All in com.example.endomie.test (1)" />
         <item itemvalue="JUnit.All in com.example.endomie.test" />
-        <item itemvalue="JUnit.EndomieHistoryTest" />
         <item itemvalue="JUnit.All in endomie.test (3)" />
       </list>
     </recent_temporary>
@@ -572,12 +581,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartControllerTest - 2019.04.24 at 16h 43m 02s.xml">
-      <configuration name="CartControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartControllerTest_cartContainsYourCartString - 2019.04.24 at 16h 45m 07s.xml">
-      <configuration name="CartControllerTest.cartContainsYourCartString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CartControllerTest_cartContainsYourCartString - 2019.04.24 at 16h 45m 39s.xml">
       <configuration name="CartControllerTest.cartContainsYourCartString" configurationId="JUnit" />
     </history-entry>
@@ -602,6 +605,12 @@
     <history-entry file="All_in_com_example_endomie_test_(1) - 2019.05.05 at 15h 17m 58s.xml">
       <configuration name="All in com.example.endomie.test (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EndomieHistoryTest - 2019.05.13 at 08h 00m 01s.xml">
+      <configuration name="EndomieHistoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EndomieHistoryTest - 2019.05.13 at 08h 02m 14s.xml">
+      <configuration name="EndomieHistoryTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="15697000" />
@@ -620,16 +629,16 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.3206934" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49573562" visible="true" weight="0.3206934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.3261105" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49562362" weight="0.34573305" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4946695" weight="0.34561214" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50373137" side_tool="true" visible="true" weight="0.3206934" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5042644" side_tool="true" visible="true" weight="0.3206934" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
@@ -813,16 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -864,24 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/history/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -894,15 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/order/DineIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -910,16 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -932,40 +896,6 @@
             <element signature="e#244#245#0" expanded="true" />
             <element signature="e#273#274#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/repositories/HistoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -992,17 +922,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
+        <state relative-caret-position="273">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/history/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/repositories/HistoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/historyservice/HistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="62" />
+          <folding>
             <element signature="e#718#719#0" expanded="true" />
             <element signature="e#754#755#0" expanded="true" />
             <element signature="e#1110#1111#0" expanded="true" />
             <element signature="e#1135#1136#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
         </state>
       </provider>
     </entry>

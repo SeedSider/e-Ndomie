@@ -4,68 +4,84 @@ import com.adprog6.endomie.order.Cart;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import com.adprog6.endomie.controllers.HistoryController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 import java.util.Map;
+import com.adprog6.endomie.historyservice.HistoryService;
 
 public class EndomieHistoryTest {
+
+    @Autowired
+    private HistoryService historyService;
+
     private History history;
-    private Cart cart1;
-    private Cart cart2;
-    private Cart cart3;
+    private History history2;
+    private History history3;
 
     @Before
     public void setUp() {
         history = new History();
+        historyService.saveHistory(history);
 
-        cart1 = new Cart();
-        history.addHistory(cart1);
+        history2 = new History();
+        historyService.saveHistory(history2);
 
-        cart2 = new Cart();
-        history.addHistory(cart2);
+        history3 = new History();
+        historyService.saveHistory(history3);
 
-        cart3 = new Cart();
-        history.addHistory(cart3);
     }
 
     @Test
     public void addingHistory() {
 
-        Cart[] arrayOfCart = {cart1, cart2, cart3};
-        Map<Integer, Cart> allCarts = history.getAllHistory();
+        History[] arrayOfHistories = {history, history2, history3};
+        Iterable<History> allHistory = historyService.listAllHistory();
 
-        for (int index = 0; index < allCarts.size(); index++) {
-            Assert.assertEquals(
-                    "match every elements inserted with their inputs ",
-                    arrayOfCart[index],
-                    allCarts.get(index));
+        int idx = 0;
+        for (History e: allHistory) {
+            Assert.assertEquals(arrayOfHistories[idx], e);
+            idx++;
         }
+//        for (int index = 0; index < arrayOfHistories.length; index++) {
+//            Assert.assertEquals(
+//                    "match every elements inserted with their inputs ",
+//                    arrayOfHistories[index],
+//                    allHistory.get(index));
+//        }
 
 
     }
 
     @Test
     public void getHistory() {
-        int cartIndex = 0;
-        Assert.assertEquals("check if get method is correct", cart1, history.getHistory(cartIndex));
+        int histIndex = 1;
+        Assert.assertEquals("check if get method is correct", history, historyService
+                .getHistoryById(histIndex));
 
-        cartIndex = 1;
-        Assert.assertEquals("check if get method is correct", cart2, history.getHistory(cartIndex));
+        histIndex = 2;
+        Assert.assertEquals("check if get method is correct", history2, historyService
+                .getHistoryById(histIndex));
 
-        cartIndex = 2;
-        Assert.assertEquals("check if get method is correct", cart3, history.getHistory(cartIndex));
-
+        histIndex = 3;
+        Assert.assertEquals("check if get method is correct", history3, historyService
+                .getHistoryById(histIndex));
     }
 
     @Test
     public void updateHistory() {
-        int cart3Index = 2;
-        Cart cart3Update = new Cart();
-        history.updateHistory(cart3Index, cart3Update);
+        int hist2Index = 2;
+        History hist2Update = historyService.getHistoryById(hist2Index);
+
+        hist2Update.setUsername("other");
+        historyService.saveHistory(hist2Update);
 
         Assert.assertEquals(
                 "update cart3 and validate update",
-                cart3Update,
-                history.getHistory(cart3Index)
+                hist2Update,
+                historyService.getHistoryById(hist2Index)
         );
     }
 
