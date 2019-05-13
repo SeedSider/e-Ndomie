@@ -1,17 +1,19 @@
 package com.adprog6.endomie;
 import com.adprog6.endomie.history.History;
-import com.adprog6.endomie.order.Cart;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.adprog6.endomie.controllers.HistoryController;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 
-import java.util.Map;
 import com.adprog6.endomie.historyservice.HistoryService;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class EndomieHistoryTest {
 
     @Autowired
@@ -20,18 +22,27 @@ public class EndomieHistoryTest {
     private History history;
     private History history2;
     private History history3;
+    private History history4;
 
     @Before
     public void setUp() {
         history = new History();
+        history.setUsername("hist1");
         historyService.saveHistory(history);
 
         history2 = new History();
+        history2.setUsername("hist2");
         historyService.saveHistory(history2);
 
         history3 = new History();
+        history3.setUsername("hist3");
         historyService.saveHistory(history3);
 
+
+    }
+
+    @Test
+    public void contextLoads() {
     }
 
     @Test
@@ -42,8 +53,9 @@ public class EndomieHistoryTest {
 
         int idx = 0;
         for (History e: allHistory) {
-            Assert.assertEquals(arrayOfHistories[idx], e);
+            Assert.assertEquals(arrayOfHistories[idx].getUsername(), e.getUsername());
             idx++;
+            if(idx == 4) break;
         }
 //        for (int index = 0; index < arrayOfHistories.length; index++) {
 //            Assert.assertEquals(
@@ -58,31 +70,39 @@ public class EndomieHistoryTest {
     @Test
     public void getHistory() {
         int histIndex = 1;
-        Assert.assertEquals("check if get method is correct", history, historyService
-                .getHistoryById(histIndex));
+        Assert.assertEquals("check if get method is correct", history.getUsername(), historyService
+                .getHistoryById(histIndex).getUsername());
 
         histIndex = 2;
-        Assert.assertEquals("check if get method is correct", history2, historyService
-                .getHistoryById(histIndex));
+        Assert.assertEquals("check if get method is correct", history2.getUsername(), historyService
+                .getHistoryById(histIndex).getUsername());
 
         histIndex = 3;
-        Assert.assertEquals("check if get method is correct", history3, historyService
-                .getHistoryById(histIndex));
+        Assert.assertEquals("check if get method is correct", history3.getUsername(), historyService
+                .getHistoryById(histIndex).getUsername());
     }
 
     @Test
     public void updateHistory() {
-        int hist2Index = 2;
-        History hist2Update = historyService.getHistoryById(hist2Index);
 
-        hist2Update.setUsername("other");
-        historyService.saveHistory(hist2Update);
+        history4 = new History();
+        history4.setUsername("hist4");
+        historyService.saveHistory(history4);
+
+        int histIndex = 4;
+        History histUpdate = historyService.getHistoryById(histIndex);
+
+        histUpdate.setUsername("other");
+        historyService.saveHistory(histUpdate);
+
+        System.out.println(histUpdate.getUsername());
 
         Assert.assertEquals(
                 "update cart3 and validate update",
-                hist2Update,
-                historyService.getHistoryById(hist2Index)
+                histUpdate.getUsername(),
+                historyService.getHistoryById(histIndex).getUsername()
         );
     }
 
 }
+

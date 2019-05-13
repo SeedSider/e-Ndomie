@@ -4,13 +4,9 @@ package com.adprog6.endomie.controllers;
 import com.adprog6.endomie.exception.ResourceNotFoundException;
 import com.adprog6.endomie.history.History;
 import com.adprog6.endomie.historyservice.HistoryService;
-import org.springframework.ui.Model;
-import com.adprog6.endomie.order.Cart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
-
-import java.util.List;
 import java.util.Optional;
 import javax.validation.Valid;
 
@@ -21,21 +17,11 @@ public class HistoryController {
     @Autowired
     private HistoryService historyService;
 
-//    @Autowired
-//    private void  setHistoryService(HistoryService historyService) {
-//        this.historyService = historyService;
-//    }
-
 
     @GetMapping(value = "/histories")
     public Iterable<History> getAllHistories() {
         return historyService.listAllHistory();
     }
-//    public String list(Model model) {
-//        model.addAttribute("history", historyService.listAllHistory());
-//        System.out.println("returning history");
-//        return "history";
-//    }
 
     @PostMapping("/history")
     public History createHistory(@Valid @RequestBody History history) {
