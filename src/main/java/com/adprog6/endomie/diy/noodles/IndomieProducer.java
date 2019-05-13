@@ -13,7 +13,8 @@ public enum IndomieProducer {
 	INDOMIE_RENDANG_DOUBLE,
 	INDOMIE_SOTO_DOUBLE,
 	INDOMIE_AYAM_BAWANG_DOUBLE,
-	INDOMIE_KARI_AYAM_DOUBLE;
+	INDOMIE_KARI_AYAM_DOUBLE,
+	INDOMIE_DEFAULT;
 
 	public CustomNoodle BaseNoodleCreator() {
 		CustomNoodle BaseNoodle;
