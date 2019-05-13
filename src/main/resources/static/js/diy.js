@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $.ajax({
-        url : "http://e-ndomie.herokuapp.com/diy/noodles",
+        url : "https://e-ndomie.herokuapp.com/diy/noodles",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
@@ -24,7 +24,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url : "http://e-ndomie.herokuapp.com/diy/toppings",
+        url : "https://e-ndomie.herokuapp.com/diy/toppings",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
