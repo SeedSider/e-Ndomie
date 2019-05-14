@@ -31,6 +31,12 @@ public class IndomieTest {
     }
 
     @Test
+    public void testIndomieThumbnail() {
+        indomie.setThumbnail("sit dolor amet");
+        assertEquals("sit dolor amet", indomie.getThumbnail());
+    }
+
+    @Test
     public void testIndomieCost() {
         indomie.setCost(3000);
         assertEquals(3000, indomie.getCost());

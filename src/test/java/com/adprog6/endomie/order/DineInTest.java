@@ -9,15 +9,22 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.springframework.boot.test.rule.OutputCapture;
 
 public class DineInTest {
 
     private Class<?> dineInClass;
+    private OrderBehaviour dineIn;
+
+    @Rule
+    public OutputCapture outputCapture = new OutputCapture();
 
     @Before
     public void setUp() throws Exception {
         dineInClass = Class.forName("com.adprog6.endomie.order.DineIn");
+        dineIn = new DineIn();
     }
 
     @Test
@@ -37,5 +44,11 @@ public class DineInTest {
 
         assertTrue(Modifier.isPublic(methodModifiers));
         assertEquals("void", dinein.getGenericReturnType().getTypeName());
+    }
+
+    @Test
+    public void testDineInOrderType() {
+        dineIn.orderType();
+        assertTrue(outputCapture.toString().contains("Dine In"));
     }
 }
