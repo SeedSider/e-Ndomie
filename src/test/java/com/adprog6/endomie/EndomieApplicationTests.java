@@ -13,11 +13,8 @@ import static org.junit.Assert.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class EndomieApplicationTests {
-    @Autowired
-    private HomeController controller;
 
     @Test
-    public void contexLoads() throws Exception {
-        assertNotNull(controller);
+    public void contextLoads() throws Exception {
     }
 }
