@@ -8,6 +8,7 @@
     <th:block th:include="fragments/head :: headFragment"></th:block>
     <title>Title</title>
     <link rel="stylesheet" th:href="@{/css/diy.css}">
+    <script th:src="@{/js/diy.js}"></script>
 </head>
 <body>
 <!--navbar-->
@@ -19,6 +20,8 @@
         <h1 class="display-4" style="color: white; font-weight: bold;">Do It Yourself!</h1>
     </div>
 </div>
+
+<div id = "productsJson"></div>
 
 <!--card shop-->
 <div class="card-shop">
@@ -80,6 +83,7 @@
         </div>
     </div>
 </div>
+
 <br><br>
 <h1>Pilih Topping</h1>
 <br>
@@ -147,4 +151,5 @@
 <!-- Footer -->
 <div lang="en" th:replace="fragments/footer :: footer"> </div>
 </body>
+
 </html>
