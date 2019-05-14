@@ -4,6 +4,14 @@
     margin: auto;
     text-align: center;
     font-family: arial;
+    align-content: end;
+}
+
+#toppingJson img {
+    padding-top: 20px;
+    max-height: 150px;
+    object-fit: cover;
+
 }
 
 .card-shop {
@@ -13,6 +21,15 @@
     color: grey;
     font-size: 22px;
 }
+
+.menu-container #indomieJson {
+    display: flex;
+}
+
+.topping-container #toppingJson {
+    display: flex;
+}
+
 
 .card button {
     border: none;
@@ -24,6 +41,7 @@
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+
 }
 
 .card button:hover {
