@@ -31,6 +31,12 @@ public class ToppingTest {
     }
 
     @Test
+    public void testToppingThumbnail() {
+        topping.setThumbnail("sit dolor amet");
+        assertEquals("sit dolor amet", topping.getThumbnail());
+    }
+
+    @Test
     public void testToppingCost() {
         topping.setCost(2000);
         assertEquals(2000, topping.getCost());
