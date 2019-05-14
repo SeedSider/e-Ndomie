@@ -17,6 +17,7 @@ public class MultipleToppingTest {
 	private CustomNoodle indomieSotoDoubleKornetKeju;
 	private CustomNoodle indomieKariAyamDoubleKornet;
 	private CustomNoodle indomieAyamBawangDouble;
+	private CustomNoodle indomieDefault;
 
 	@Test
 	public void testIndomieRendangTelurKornetCost() {
@@ -137,7 +138,7 @@ public class MultipleToppingTest {
 
 	@Test
 	public void testIndomieSotoDoubleKornetKejuCost() {
-		indomieSotoDoubleKornetKeju= IndomieProducer.INDOMIE_SOTO_DOUBLE.BaseNoodleCreator();
+		indomieSotoDoubleKornetKeju = IndomieProducer.INDOMIE_SOTO_DOUBLE.BaseNoodleCreator();
 		assertEquals(12000, indomieSotoDoubleKornetKeju.cost());
 
 		indomieSotoDoubleKornetKeju = ToppingDecorator.KORNET.addTopping(indomieSotoDoubleKornetKeju);
@@ -152,7 +153,7 @@ public class MultipleToppingTest {
 
 	@Test
 	public void testIndomieKariAyamDoubleKornetCost() {
-		indomieKariAyamDoubleKornet= IndomieProducer.INDOMIE_KARI_AYAM_DOUBLE.BaseNoodleCreator();
+		indomieKariAyamDoubleKornet = IndomieProducer.INDOMIE_KARI_AYAM_DOUBLE.BaseNoodleCreator();
 		assertEquals(12000, indomieKariAyamDoubleKornet.cost());
 
 		indomieKariAyamDoubleKornet = ToppingDecorator.KORNET.addTopping(indomieKariAyamDoubleKornet);
@@ -164,10 +165,18 @@ public class MultipleToppingTest {
 
 	@Test
 	public void testIndomieAyamBawangDoubleCost() {
-		indomieAyamBawangDouble= IndomieProducer.INDOMIE_AYAM_BAWANG_DOUBLE.BaseNoodleCreator();
+		indomieAyamBawangDouble = IndomieProducer.INDOMIE_AYAM_BAWANG_DOUBLE.BaseNoodleCreator();
 		assertEquals(12000, indomieAyamBawangDouble.cost());
 
 		assertEquals("Indomie Kuah Rasa Ayam Bawang Double",
 				indomieAyamBawangDouble.getDescription());
+	}
+
+	@Test
+	public void testIndomieDefaultCost() {
+		indomieDefault = IndomieProducer.INDOMIE_DEFAULT.BaseNoodleCreator();
+		assertEquals(0, indomieDefault.cost());
+
+		assertEquals("", indomieDefault.getDescription());
 	}
 }
