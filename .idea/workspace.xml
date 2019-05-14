@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6982dca-fcf1-4b79-bfb9-a32456bd55ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DIYController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DIYController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DiyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DiyPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/model/Indomie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/model/Indomie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/model/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/model/Topping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/diy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/diy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/diy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/diy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/diy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/diy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-    </list>
+    <list default="true" id="e6982dca-fcf1-4b79-bfb9-a32456bd55ab" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,6 +37,11 @@
       </list>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -68,6 +55,32 @@
             <path>
               <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="endomie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
