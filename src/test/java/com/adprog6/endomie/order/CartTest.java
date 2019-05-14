@@ -1,23 +1,29 @@
 package com.adprog6.endomie.order;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Parameter;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.springframework.boot.test.rule.OutputCapture;
+
+import static org.junit.Assert.*;
 
 public class CartTest {
 
     private Class<?> cartClass;
+    private Cart cart;
+
+    @Rule
+    public OutputCapture outputCapture = new OutputCapture();
 
     @Before
     public void setUp() throws Exception {
         cartClass = Class.forName("com.adprog6.endomie.order.Cart");
+        cart = new Cart();
     }
 
     @Test
@@ -29,4 +35,17 @@ public class CartTest {
 
         assertTrue(Modifier.isPublic(methodModifiers));
     }
+
+    @Test
+    public void testCartOrderBehaviour() {
+        cart.orderType();
+        assertTrue(outputCapture.toString().contains("Dine In"));
+        assertTrue(cart.getOrderBehaviour() instanceof DineIn);
+
+        cart.setOrderBehavior(new Delivery());
+        cart.orderType();
+        assertTrue(outputCapture.toString().contains("Delivery"));
+        assertTrue(cart.getOrderBehaviour() instanceof Delivery);
+    }
+
 }

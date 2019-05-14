@@ -5,7 +5,7 @@ public class Delivery implements OrderBehaviour {
     private double deliveryFeePercentage=0.3;
 
     @Override
-    public void orderType() { System.out.println("Delivery");};
+    public void orderType() { System.out.println("Delivery");}
 
     public void setDeliveryAddress(String address){
         this.deliveryAddress = address;

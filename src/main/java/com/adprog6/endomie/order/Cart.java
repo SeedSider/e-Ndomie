@@ -23,8 +23,8 @@ public class Cart{
          orderBehaviour.orderType();
     }
 
-    public void setOrderBehaviour(OrderBehaviour orderBehaviour) {
-        this.orderBehaviour = orderBehaviour;
+    public OrderBehaviour getOrderBehaviour() {
+        return this.orderBehaviour;
     }
 
     public void addIndomie(CustomNoodle myIndomie){
