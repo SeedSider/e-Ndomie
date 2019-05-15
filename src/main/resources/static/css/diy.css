@@ -14,19 +14,41 @@
 
 }
 
+.card-shop {
+    margin: 75px;
+}
 .price {
     color: grey;
     font-size: 22px;
 }
 
-.menu-container #indomieJson {
+#indomieJson {
     display: flex;
 }
 
-.topping-container #toppingJson {
+.menu-container {
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+hr{
+    border-width: 2px;
+}
+
+#toppingJson {
     display: flex;
 }
 
+.topping-container {
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#indomie-menu {
+    font-size: 18px;
+}
 
 .card button {
     border: none;
@@ -41,12 +63,37 @@
 
 }
 
+.flex-container {
+    display: block;
+}
+.submitButton{
+    background-color: #3498db;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    alignment: right;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    margin-right: 50px;
+}
+
+.diy-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 50px 80px 50px;
+}
+
 .card button:hover {
     opacity: 0.7;
 }
 
 .jumbotron{
-    background-image: url('https://media.malaymail.com/uploads/articles/2018/2018-10/1910_indomie1.jpg');
+    background-image: url('https://prods3.imgix.net/images/articles/2016_02/Hero-Japanese-Trend-Restaurants-Japan-Marukin-Mr-Taka-Ramen-Ootoya-Sushi-Soba-Asian-Recipes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 150px;
