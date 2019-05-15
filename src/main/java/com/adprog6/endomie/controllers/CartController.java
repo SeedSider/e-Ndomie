@@ -42,11 +42,22 @@ public class CartController {
         return "cart";
     }
 
-
-//    @RequestMapping(value = "cart/all")
-//    public ResponseEntity<Object> getAllCarts() {
-//        return new ResponseEntity<>(toppingRepo.values(), HttpStatus.OK);
+//    private static Map<String, MenuCreated> menuRepo = new HashMap<>();
+//    @RequestMapping(value = "diy/checkout", method = RequestMethod.POST)
+//    public @ResponseBody MenuCreated checkout(@RequestBody MenuCreated requestJSON) {
+//        MenuCreated menu = new MenuCreated();
+//        menu.setId(requestJSON.getId());
+//        menu.setMenu(requestJSON.getMenu());
+//        menu.setPrice(requestJSON.getPrice());
+//        menuRepo.put(menu.getId(), menu);
+//        return menu;
 //    }
+//
+//    @RequestMapping(value = "diy/checkout")
+//    public ResponseEntity<Object> getMenu() {
+//        return new ResponseEntity<>(menuRepo.values(), HttpStatus.OK);
+//    }
+
 
 }
 

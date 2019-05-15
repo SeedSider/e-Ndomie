@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
     <th:block th:include="fragments/head :: headFragment"></th:block>
-    <title>Cart - E-ndomie</title>
-    <link rel="stylesheet" th:href="@{/css/cart.css}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<!--    <script src="jquery-3.4.0.min.js"></script>-->
-    <script th:src="@{/js/cart.js}"></script>
+    <title>Checkout - E-ndomie</title>
+    <link rel="stylesheet" th:href="@{/css/checkout.css}">
 </head>
 <body>
 <!--navbar-->
@@ -18,25 +15,21 @@
 
 <!--checkout-->
 <div class="main">
-    <!--cart-->
-    <div class="main">
-        <h1>Cart</h1>
-        <h2 class="sub-heading">This is your list of good stuffs.</h2>
-    </div>
+    <h1>Shopping cart</h1>
+    <h2 class="sub-heading">Free shipping from $100!</h2>
 
-    <!--loop json dari diy here-->
     <section class="shopping-cart">
         <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
 
             <script id="shopping-cart--list-item-template" type="text/template">
                 <li class="_grid shopping-cart--list-item">
                     <div class="_column product-image">
-                        <img class="product-image--img" src="{{=thumbnail}}" alt="Item image" width="100" height="100"/>
+                        <img class="product-image--img" src="{{=thumbnail}}" alt="Item image" />
                     </div>
                     <div class="_column product-info">
                         <h4 class="product-name">{{=name}}</h4>
-                        <p class="product-desc">{{=description}}</p>
-                        <div class="price product-single-price">{{=cost}}</div>
+                        <p class="product-desc">{{=desc}}</p>
+                        <div class="price product-single-price">${{=cost}}</div>
                     </div>
                     <div class="_column product-modifiers" data-product-price="{{=cost}}">
                         <div class="_grid">
@@ -45,32 +38,12 @@
                             <button class="_btn _column product-plus">&plus;</button>
                         </div>
                         <button class="_btn entypo-trash product-remove">Remove</button>
-                        <div class="price product-total-price">0</div>
+                        <div class="price product-total-price">$0.00</div>
                     </div>
                 </li>
             </script>
 
         </ol>
-
-        <!--pick behaviour order-->
-        <div>
-            <p>Delivery Type:</p>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button id="deliveryButton" type="button" class="btn btn-secondary">Delivery</button>
-                <button id="dineInButton" type="button" class="btn btn-secondary">Dine In</button>
-            </div>
-
-            <div id="deliveryAddres" class="form-group" style="display:none;">
-                <label for="deliveryAddres">Delivery Address:</label>
-                <textarea class="form-control" rows="5" id="deliveryAddressTextArea"></textarea>
-            </div>
-
-            <div id="tableNumber" class="form-group" style="display:none;">
-                <label for="tableNumber">Table Number:</label>
-                <input type="text" class="form-control" id="tableNumberTextArea">
-            </div>
-
-        </div>
 
         <footer class="_grid cart-totals">
             <div class="_column subtotal" id="subtotalCtr">
@@ -90,7 +63,7 @@
                 <div class="cart-totals-value">$0.00</div>
             </div>
             <div class="_column checkout">
-                <button class="_btn checkout-btn entypo-forward" th:action = "@{/checkout}">Checkout</button>
+                <button id = "checkoutButton" class="_btn checkout-btn entypo-forward">Checkout</button>
             </div>
         </footer>
 
@@ -99,33 +72,57 @@
 
 </body>
 <script>
-    <!--fungsi yang harus dibuat-->
 
+    <!-- get info utk json -->
+    var listIndomie = [];
+    var listHarga = [];
+    $(document).ready(function(){
 
-    <!--CLICK DELIVERY BUTTON-->
-    $("#deliveryButton").click(function(){
-        $("#tableNumber").hide();
-        $("#deliveryAddres").show();
+        $(".product-name").each(function(){
+            console.log($(this).text());
+            listIndomie.push({$(this).text());
+        }
+
+        $(".price product-total-price").each(function(){
+            listHarga.push({$(this).text());
+            console.log(listOrder);
+        });
+
     });
 
-    <!--click dine in button-->
-    $("#dineInButton").click(function(){
-        $("#deliveryAddress").hide();
-        $("#tableNumber").show();
+    $('#checkoutButton').click(function () {
+
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log(profile.getName());
+        };
+
+        var cartInfo=;
+
+        for (var i = 0; i < listIndomie.length; i += 1) {
+            cartInfo+="{\"menu\" : "+listIndomie[i]+
+                        "\"price\" :"+listHarga[i]+"}";
+            };
+        }
+
+
+
+        console.log(id);
+        var requestJSON = JSON.stringify(cartInfo);
+        console.log(requestJSON);
+        $.ajax({
+            url : "https://e-ndomie.herokuapp.com/cart/all",
+            type : "POST",
+            contentType : 'application/json',
+            data : requestJSON,
+            success : function (data) {
+                console.log(data);
+            },
+            error : function (data) {
+            }
+        });
     });
 
-    // $("saveDelivery").click(function(){
-    //     var deliveryAddress = $(#deliveryAddressTextArea).value;
-    //     $("#deliveryAddres").hide();
-    //     $("#report").
-    // })
-    //
-    //
-    // $("saveDineIn").click(function(){
-    //     var tableNumber = $(#tableNumberTextArea).value;
-    //     $("#tableNumber").hide();
-    //     $("#report").show();
-    // })
 
     function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
@@ -142,16 +139,42 @@
         a:""})}var h=/\{\{(([@!]?)(.+?))\}\}(([\s\S]+?)(\{\{:\1\}\}([\s\S]+?))?)\{\{\/\1\}\}/g,k=/\{\{([=%])(.+?)\}\}/g;c.prototype.render=function(a){return d(this.t,a)};window.t=c})();
     // end of 't';
 
-    // Number.prototype.to_$ = function () {
-    //     return "$" + parseFloat( this ).toFixed(2);
-    // };
-    // String.prototype.strip$ = function () {
-    //     return this.split("$")[1];
-    // };
+    Number.prototype.to_$ = function () {
+        return "$" + parseFloat( this ).toFixed(2);
+    };
+    String.prototype.strip$ = function () {
+        return this.split("$")[1];
+    };
 
     var app = {
 
-        shipping: 25000,
+        shipping: 5.00,
+        products: [
+            {
+                "name": "Meet and greet with Bill Murray",
+                "price": 1212,
+                "img": "http://fillmurray.com/g/159/159",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            },
+            {
+                "name": "Tap Water",
+                "price": 8989,
+                "img": "http://shechive.files.wordpress.com/2011/08/odd-products-28.jpg?w=159&h=159",
+                "desc": "You decide"
+            },
+            {
+                "name": "Social Shower Curtain",
+                "price": 40,
+                "img": "http://media-cache-ec2.pinimg.com/550x/c7/02/8f/c7028f260ae030ba66494ee75407192f.jpg",
+                "desc": "Always stay up-to-date with this very useless shower curtain!"
+            },
+            {
+                "name": "Self stirring mug",
+                "img": "https://i.dailymail.co.uk/i/pix/2012/09/16/article-2204256-15053801000005DC-304_634x524.jpg",
+                "price": 819,
+                "desc": "Don't get tired!"
+            }
+        ],
 
         removeProduct: function () {
             "use strict";
@@ -168,10 +191,18 @@
         addProduct: function () {
             "use strict";
 
+            console.log("addd product");
+
             var qtyCtr = $(this).prev(".product-qty"),
+
                 quantity = parseInt(qtyCtr.html(), 10) + 1;
 
+            console.log(qtyCtr);
+            console.log($(this).prev(".product-qty").val());
+                console.log(quantity);
+
             app.updateProductSubtotal(this, quantity);
+            // listOrder.add($(this).(cart-totals-value).val());
         },
 
         subtractProduct: function () {
@@ -193,9 +224,14 @@
                 subtotalCtr = ctr.find(".product-total-price"),
                 subtotalPrice = quantity * productPrice;
 
-            productQtyCtr.html(quantity);
-            // subtotalCtr.html(subtotalPrice.to_$());
+                console.log("subtotal");
+                console.log(quantity);
+                console.log(productPrice);
+                console.log(subtotalPrice);
 
+
+            productQtyCtr.html(quantity);
+            subtotalCtr.html(subtotalPrice.to_$());
 
             app.updateTotals();
         },
@@ -208,16 +244,15 @@
                 shipping;
 
             for (var i = 0; i < products.length; i += 1) {
-                // subtotal += parseFloat($(products[i]).find(".product-total-price").html().strip$());
-                subtotal += $(products[i]).find(".product-total-price").html();
+                subtotal += parseFloat($(products[i]).find(".product-total-price").html().strip$());
             }
 
             shipping = (subtotal > 0 && subtotal < (100 / 1.06)) ? app.shipping : 0;
 
-            $("#subtotalCtr").find(".cart-totals-value").html(subtotal);
-            $("#taxesCtr").find(".cart-totals-value").html((subtotal * 0.06));
-            $("#totalCtr").find(".cart-totals-value").html((subtotal * 1.06 + shipping));
-            $("#shippingCtr").find(".cart-totals-value").html(shipping);
+            $("#subtotalCtr").find(".cart-totals-value").html(subtotal.to_$());
+            $("#taxesCtr").find(".cart-totals-value").html((subtotal * 0.06).to_$());
+            $("#totalCtr").find(".cart-totals-value").html((subtotal * 1.06 + shipping).to_$());
+            $("#shippingCtr").find(".cart-totals-value").html(shipping.to_$());
         },
 
         attachEvents: function () {
@@ -244,32 +279,47 @@
             }
         },
 
+
+    //     renderTemplates: function () {
+    //         "use strict";
+    //
+    //         var products = app.products,
+    //             content = [],
+    //             template = new t( $("#shopping-cart--list-item-template").html() );
+    //
+    //         for (var i = 0; i < products.length; i += 1) {
+    //             content[i] = template.render(products[i]);
+    //         }
+    //
+    //         $("#shopping-cart--list").html(content.join(""));
+    //     }
+    //
+    // };
+
         renderTemplates: function () {
-                "use strict";
+            "use strict";
 
-                var products = null,
-                    content = [],
-                    template = new t($("#shopping-cart--list-item-template").html());
+            var products = null,
+                content = [],
+                template = new t($("#shopping-cart--list-item-template").html());
 
-                $.ajax({
-                    type: 'GET',
-                    data: {},
-                    url: 'http://localhost:8080/diy/noodles',
-                    dataType: 'json',
-                    success: function (data) {
-                        products = eval(JSON.stringify(data));
-                        console.log(products);
-                        for (var i = 0; i < products.length; i += 1) {
-                            content[i] = template.render(products[i]);
-                        }
-
-                        $("#shopping-cart--list").html(content.join(""));
-
+            $.ajax({
+                type: 'GET',
+                data: {},
+                url: 'http://localhost:8080/diy/noodles',
+                dataType: 'json',
+                success: function (data) {
+                    products = eval(JSON.stringify(data));
+                    console.log(products);
+                    for (var i = 0; i < products.length; i += 1) {
+                        content[i] = template.render(products[i]);
                     }
-                });
-
-            }
-        };
+                    $("#shopping-cart--list").html(content.join(""));
+                },
+                async:false,
+            });
+        }
+    };
 
     app.renderTemplates();
     app.setProductImages();
@@ -277,5 +327,7 @@
 
 </script>
 
+<!-- Footer -->
+<div lang="en" th:replace="fragments/footer :: footer"> </div>
 </body>
 </html>
