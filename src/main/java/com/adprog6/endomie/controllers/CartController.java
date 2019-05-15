@@ -39,13 +39,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 @CrossOrigin
-@Controller
+@RestController
 public class CartController {
-    @CrossOrigin(origins = "https://e-ndomie.herokuapp.com/")
-    @GetMapping("/cart")
-    public String cart() {
-        return "cart";
-    }
+//    @CrossOrigin(origins = "https://e-ndomie.herokuapp.com/")
+//    @GetMapping("/cart")
+//    public String cart() {
+//        return "cart";
+//    }
 
     private static Map<String, CartModel> cartRepo = new HashMap<>();
     @RequestMapping(value = "cart/all", method = RequestMethod.POST)
