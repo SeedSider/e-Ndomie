@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $.ajax({
-        url : "http://localhost:8080/diy/noodles",
+        url : "https://e-ndomie.herokuapp.com/diy/noodles",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
@@ -13,7 +13,7 @@ $(document).ready(function(){
                 + "<p class='description'>" + indomie_list[i].description + "</p>" + "<p><button class='toCartMie'>Add to Cart</button></p>"
                 + "</div></div>";
                 $("#indomieJson").append(content);
-            };
+            }
         },
 
         error: function (error) {
@@ -24,7 +24,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url : "http://localhost:8080/diy/toppings",
+        url : "https://e-ndomie.herokuapp.com/diy/toppings",
         dataType : "json",
         success : function (datajson) {
             console.log("masuk");
@@ -36,7 +36,7 @@ $(document).ready(function(){
                     + "<p><button class='toCartTop'>Add to Cart</button></p>"
                     + "</div></div>";
                 $("#toppingJson").append(content);
-            };
+            }
         },
 
         error: function (error) {

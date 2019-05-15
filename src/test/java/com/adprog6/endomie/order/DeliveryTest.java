@@ -9,15 +9,22 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.springframework.boot.test.rule.OutputCapture;
 
 public class DeliveryTest {
 
     private Class<?> deliveryClass;
+    private OrderBehaviour delivery;
+
+    @Rule
+    public OutputCapture outputCapture = new OutputCapture();
 
     @Before
     public void setUp() throws Exception {
         deliveryClass = Class.forName("com.adprog6.endomie.order.Delivery");
+        delivery = new Delivery();
     }
 
     @Test
@@ -37,5 +44,11 @@ public class DeliveryTest {
 
         assertTrue(Modifier.isPublic(methodModifiers));
         assertEquals("void", delivery.getGenericReturnType().getTypeName());
+    }
+
+    @Test
+    public void testDineInOrderType() {
+        delivery.orderType();
+        assertTrue(outputCapture.toString().contains("Delivery"));
     }
 }
