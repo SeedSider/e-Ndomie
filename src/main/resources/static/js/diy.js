@@ -105,6 +105,40 @@ $(document).ready(function(){
 
     });
 
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log(profile.getName());
+    };
+
+    $('#submitButton').click(function () {
+
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log(profile.getName());
+        };
+
+        var menuCreated = {
+            id,
+            menu : $('#indomie-menu').text(),
+            price : $('#priceTotal').text(),
+        };
+
+        console.log(id);
+        var requestJSON = JSON.stringify(menuCreated);
+        console.log(requestJSON);
+        $.ajax({
+            url : "https://e-ndomie.herokuapp.com/diy/checkout",
+            type : "POST",
+            contentType : 'application/json',
+            data : requestJSON,
+            success : function (data) {
+                console.log(data);
+            },
+            error : function (data) {
+            }
+        });
+    });
+
 });
 
 
