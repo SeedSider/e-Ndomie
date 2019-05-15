@@ -19,14 +19,33 @@
     font-size: 22px;
 }
 
-.menu-container #indomieJson {
+#indomieJson {
     display: flex;
 }
 
-.topping-container #toppingJson {
+.menu-container {
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+hr{
+    border-width: 2px;
+}
+
+#toppingJson {
     display: flex;
 }
 
+.topping-container {
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#indomie-menu {
+    font-size: 18px;
+}
 
 .card button {
     border: none;
@@ -39,6 +58,31 @@
     width: 100%;
     font-size: 18px;
 
+}
+
+.flex-container {
+    display: block;
+}
+.submitButton{
+    background-color: #3498db;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    alignment: right;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    margin-right: 50px;
+}
+
+.diy-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 50px 80px 50px;
 }
 
 .card button:hover {
