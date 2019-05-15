@@ -117,3 +117,8 @@ section .section-title {
         margin-bottom: 10px;
     }
 }
+
+.img-hover-zoom {
+    height: 300px; /* Modify this according to your need */
+    overflow: hidden; /* Removing this will break the effects */
+}
