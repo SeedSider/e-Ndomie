@@ -26,15 +26,8 @@ public class CartTest {
         cart = new Cart();
     }
 
-//    @Test
-//    public void testOrderanIsAbstract() {
-//        int classModifiers = orderClass.getModifiers();
-//
-//        assertTrue(Modifier.isAbstract(classModifiers));
-//    }
-
     @Test
-    public void testOrderanHasOrderBehaviourSetter() throws Exception {
+    public void testCartHasOrderBehaviourSetter() throws Exception {
         Method setOrderBehavior = cartClass.getDeclaredMethod("setOrderBehavior",
                 OrderBehaviour.class);
         Collection<Parameter> parameters = Arrays.asList(setOrderBehavior.getParameters());
@@ -54,4 +47,5 @@ public class CartTest {
         assertTrue(outputCapture.toString().contains("Delivery"));
         assertTrue(cart.getOrderBehaviour() instanceof Delivery);
     }
+
 }
