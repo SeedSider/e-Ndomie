@@ -133,6 +133,7 @@ $(document).ready(function(){
             data : requestJSON,
             success : function (data) {
                 console.log(data);
+                window.location.href = "http://e-ndomie.herokuapp.com/cart";
             },
             error : function (data) {
             }
