@@ -29,8 +29,11 @@
 
 package com.adprog6.endomie.controllers;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class CartController {
@@ -38,5 +41,12 @@ public class CartController {
     public String cart() {
         return "cart";
     }
+
+
+//    @RequestMapping(value = "cart/all")
+//    public ResponseEntity<Object> getAllCarts() {
+//        return new ResponseEntity<>(toppingRepo.values(), HttpStatus.OK);
+//    }
+
 }
 
