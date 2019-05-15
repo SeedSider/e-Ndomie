@@ -71,59 +71,8 @@
 </div>
 
 </body>
+
 <script>
-
-    <!-- get info utk json -->
-    var listIndomie = [];
-    var listHarga = [];
-    $(document).ready(function(){
-
-        $(".product-name").each(function(){
-            console.log($(this).text());
-            listIndomie.push({$(this).text());
-        }
-
-        $(".price product-total-price").each(function(){
-            listHarga.push({$(this).text());
-            console.log(listOrder);
-        });
-
-    });
-
-    $('#checkoutButton').click(function () {
-
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log(profile.getName());
-        };
-
-        var cartInfo=;
-
-        for (var i = 0; i < listIndomie.length; i += 1) {
-            cartInfo+="{\"menu\" : "+listIndomie[i]+
-                        "\"price\" :"+listHarga[i]+"}";
-            };
-        }
-
-
-
-        console.log(id);
-        var requestJSON = JSON.stringify(cartInfo);
-        console.log(requestJSON);
-        $.ajax({
-            url : "https://e-ndomie.herokuapp.com/cart/all",
-            type : "POST",
-            contentType : 'application/json',
-            data : requestJSON,
-            success : function (data) {
-                console.log(data);
-            },
-            error : function (data) {
-            }
-        });
-    });
-
-
     function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -320,6 +269,8 @@
             });
         }
     };
+
+
 
     app.renderTemplates();
     app.setProductImages();
