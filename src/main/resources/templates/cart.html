@@ -23,6 +23,7 @@
 
             <script id="shopping-cart--list-item-template" type="text/template">
                 <li class="_grid shopping-cart--list-item">
+
 <!--                    <div class="_column product-image">-->
 <!--                        <img class="product-image&#45;&#45;img" src="{{=thumbnail}}" alt="Item image" />-->
 <!--                    </div>-->
@@ -30,6 +31,7 @@
                         <h4 class="product-name">{{=menu}}</h4>
                         <p class="product-desc"><br><br></p>
                         <div class="price product-single-price">${{=price}}</div>
+
                     </div>
                     <div class="_column product-modifiers" data-product-price="{{=price}}">
                         <div class="_grid">
@@ -150,6 +152,7 @@
             console.log($(this).prev(".product-qty").val());
                 console.log(quantity);
 
+
             app.updateProductSubtotal(this, quantity);
             // listOrder.add($(this).(cart-totals-value).val());
         },
@@ -229,22 +232,6 @@
         },
 
 
-    //     renderTemplates: function () {
-    //         "use strict";
-    //
-    //         var products = app.products,
-    //             content = [],
-    //             template = new t( $("#shopping-cart--list-item-template").html() );
-    //
-    //         for (var i = 0; i < products.length; i += 1) {
-    //             content[i] = template.render(products[i]);
-    //         }
-    //
-    //         $("#shopping-cart--list").html(content.join(""));
-    //     }
-    //
-    // };
-
         renderTemplates: function () {
             "use strict";
 
@@ -255,8 +242,10 @@
             $.ajax({
                 type: 'GET',
                 data: {},
+
                 // url: 'http://e-ndomie.herokuapp.com/diy/checkout',
                 url: 'http://e-ndomie.herokuapp.com/diy/checkout',
+
                 dataType: 'json',
                 success: function (data) {
                     products = eval(JSON.stringify(data));
@@ -270,6 +259,7 @@
             });
         }
     };
+
 
     $('#checkoutButton').click(function () {
 
