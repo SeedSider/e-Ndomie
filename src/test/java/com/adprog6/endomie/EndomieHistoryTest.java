@@ -1,4 +1,5 @@
 package com.adprog6.endomie;
+import com.adprog6.endomie.exception.ResourceNotFoundException;
 import com.adprog6.endomie.history.History;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,6 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.adprog6.endomie.historyservice.HistoryService;
 
+import java.util.Optional;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class EndomieHistoryTest {
@@ -23,6 +26,7 @@ public class EndomieHistoryTest {
     private History history2;
     private History history3;
     private History history4;
+    private History history5;
 
     @Before
     public void setUp() {
@@ -37,6 +41,14 @@ public class EndomieHistoryTest {
         history3 = new History();
         history3.setUsername("hist3");
         historyService.saveHistory(history3);
+
+        history4 = new History();
+        history4.setUsername("hist4");
+        historyService.saveHistory(history4);
+
+        history5 = new History();
+        history4.setUsername("hist5");
+        historyService.saveHistory(history5);
 
 
     }
@@ -55,14 +67,8 @@ public class EndomieHistoryTest {
         for (History e: allHistory) {
             Assert.assertEquals(arrayOfHistories[idx].getUsername(), e.getUsername());
             idx++;
-            if(idx == 4) break;
+            if(idx == 3) break;
         }
-//        for (int index = 0; index < arrayOfHistories.length; index++) {
-//            Assert.assertEquals(
-//                    "match every elements inserted with their inputs ",
-//                    arrayOfHistories[index],
-//                    allHistory.get(index));
-//        }
 
 
     }
@@ -85,23 +91,49 @@ public class EndomieHistoryTest {
     @Test
     public void updateHistory() {
 
-        history4 = new History();
-        history4.setUsername("hist4");
-        historyService.saveHistory(history4);
-
         int histIndex = 4;
         History histUpdate = historyService.getHistoryById(histIndex);
 
         histUpdate.setUsername("other");
         historyService.saveHistory(histUpdate);
 
-        System.out.println(histUpdate.getUsername());
+//        System.out.println(histUpdate.getUsername());
 
         Assert.assertEquals(
                 "update cart3 and validate update",
                 histUpdate.getUsername(),
                 historyService.getHistoryById(histIndex).getUsername()
         );
+    }
+
+    @Test
+    public void deleteHistory() {
+
+        int histIndex = 5;
+        History historyToDelete = Optional.ofNullable(historyService.getHistoryById(histIndex))
+                .orElseThrow(() -> new ResourceNotFoundException("History", "id", histIndex));
+
+        Iterable<History> allHistory = historyService.listAllHistory();
+
+        int counterBeforeDeletion = 0;
+        for (History e : allHistory ) {
+//            System.out.println(e.getUsername());
+            counterBeforeDeletion++;
+//            System.out.println(counterForDeletion);
+        }
+
+        historyService.deleteHistory(
+                historyToDelete.getIndex()
+        );
+
+        allHistory = historyService.listAllHistory();
+
+        int counterAfterDeletion = 0;
+        for (History e : allHistory ) {
+            counterAfterDeletion++;
+        }
+
+        Assert.assertEquals(counterBeforeDeletion-1, counterAfterDeletion);
     }
 
 }
