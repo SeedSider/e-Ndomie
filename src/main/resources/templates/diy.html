@@ -49,4 +49,18 @@
 <div lang="en" th:replace="fragments/footer :: footer"> </div>
 
 </body>
+
+<script>
+    let id = null;
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+        $("#user-id").text(profile.getName());// This is null if the 'email' scope is not present.
+        id = profile.getId();
+    }
+
+</script>
 </html>

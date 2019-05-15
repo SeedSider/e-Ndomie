@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="3786fc84-bd6c-415b-8126-caf6d6ee9857" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/history.css" afterDir="false" />
@@ -20,8 +21,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" afterDir="false" />
 >>>>>>> history
+=======
+    <list default="true" id="485386fd-d0a7-4c5c-8ad4-0941b8184af8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,154 +38,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/history.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/history.css">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieMappingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="228">
-              <caret line="97" lean-forward="true" selection-start-line="92" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="49" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="49" />
-=======
-            <state relative-caret-position="392">
-              <caret line="320" selection-start-line="320" selection-end-line="320" />
->>>>>>> 1b919cd06a787a032d519e90c779639c839a32c2
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/history.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3013">
-              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+            <state relative-caret-position="-180">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#9788#10020#0" />
-                <element signature="e#10061#10462#0" />
-                <element signature="e#10513#11717#0" />
+                <element signature="imports" expanded="true" />
               </folding>
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/diy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="62" />
->>>>>>> 1b919cd06a787a032d519e90c779639c839a32c2
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CheckoutController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DiyPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
->>>>>>> 1b919cd06a787a032d519e90c779639c839a32c2
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="108">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/checkout.css">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="330" selection-start-line="330" selection-end-line="330" />
-            </state>
+            <state relative-caret-position="-1404" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/cart.css">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="6873">
-              <caret line="537" column="10" selection-start-line="537" selection-start-column="10" selection-end-line="537" selection-end-column="10" />
-=======
-            <state>
-              <caret selection-end-line="119" />
->>>>>>> 1b919cd06a787a032d519e90c779639c839a32c2
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="648">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -415,12 +341,15 @@
       <find>cart3</find>
     </findStrings>
   </component>
+=======
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/resources/templates/signin.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" />
@@ -461,10 +390,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/HistoryController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieHistoryTest.java" />
 >>>>>>> history
+=======
+        <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="x" value="144" />
     <option name="y" value="75" />
@@ -475,18 +409,26 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
 >>>>>>> history
+=======
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
 =======
 >>>>>>> history
+=======
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -497,11 +439,6 @@
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -529,19 +466,15 @@
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endomie" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
-=======
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="endomie" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
               <item name="diy" type="462c0819:PsiDirectoryNode" />
@@ -577,11 +510,14 @@
               <item name="endomie" type="462c0819:PsiDirectoryNode" />
               <item name="historyservice" type="462c0819:PsiDirectoryNode" />
 >>>>>>> history
+=======
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
             </path>
             <path>
               <item name="e-ndomie" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-ndomie" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
 <<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -666,17 +602,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="endomie" type="462c0819:PsiDirectoryNode" />
 >>>>>>> history
+=======
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endomie" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -684,6 +630,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="list.type.of.created.stylesheet" value="CSS" />
 =======
@@ -693,6 +640,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+=======
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -708,6 +661,7 @@
   </component>
 <<<<<<< HEAD
   <component name="RunManager">
+<<<<<<< HEAD
 =======
   <component name="RunManager" selected="JUnit.EndomieHistoryTest">
     <configuration name="EndomieApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -764,12 +718,22 @@
     </configuration>
 >>>>>>> history
     <configuration name="EndomieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+=======
+    <configuration name="EndomieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
       <module name="endomie.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adprog6.endomie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.adprog6.endomie.EndomieApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <list>
@@ -789,18 +753,25 @@
       </list>
     </recent_temporary>
 >>>>>>> history
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EndomieApplication" />
+      </list>
+    </recent_temporary>
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3786fc84-bd6c-415b-8126-caf6d6ee9857" name="Default Changelist" comment="" />
-      <created>1557885101585</created>
+      <changelist id="485386fd-d0a7-4c5c-8ad4-0941b8184af8" name="Default Changelist" comment="" />
+      <created>1557915259052</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557885101585</updated>
-      <workItem from="1557885103144" duration="12524000" />
+      <updated>1557915259052</updated>
+      <workItem from="1557915261809" duration="1949000" />
     </task>
     <servers />
   </component>
@@ -840,11 +811,7 @@
   </component>
 >>>>>>> history
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="18282000" />
-=======
-    <option name="totallyTimeSpent" value="12524000" />
->>>>>>> 1b919cd06a787a032d519e90c779639c839a32c2
+    <option name="totallyTimeSpent" value="1949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,6 +823,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
@@ -936,38 +904,55 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
 >>>>>>> history
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="JProfiler" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adprog6/endomie/EndomieMappingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/diy/CustomNoodle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="124" selection-start-line="6" selection-start-column="124" selection-end-line="6" selection-end-column="124" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="170">
           <caret line="10" column="97" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
           <folding>
@@ -999,12 +984,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+=======
+        <state relative-caret-position="-180">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1280,49 +1270,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/cart.js">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/EndomieApplication.java">
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart.html">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3013">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#9788#10020#0" />
-            <element signature="e#10061#10462#0" />
-            <element signature="e#10513#11717#0" />
-          </folding>
+        <state relative-caret-position="-1404" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CheckoutController.java">
+    <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DiyPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/DIYController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="97" lean-forward="true" selection-start-line="92" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adprog6/endomie/controllers/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="255">
           <caret line="49" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="49" />
 =======
@@ -1388,6 +1365,10 @@
             <element signature="imports" expanded="true" />
           </folding>
 >>>>>>> history
+=======
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+>>>>>>> 80cbd6faf51b5be9ae6512c0e01494a41796f40a
         </state>
       </provider>
     </entry>
@@ -1408,6 +1389,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1430,6 +1412,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1441,6 +1424,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>endomie</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1452,6 +1436,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -40,9 +40,12 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
     // https://mvnrepository.com/artifact/org.hibern9ate/hibernate-gradle-plugin
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile("com.h2database:h2:1.4.191")
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    compile('com.fasterxml.jackson.core:jackson-databind:2.2.3')
+    compile('org.codehaus.jackson:jackson-mapper-asl:1.9.13')
+    compile('org.codehaus.jackson:jackson-core-asl:1.9.13')
 
 }
