@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CheckoutController {
     @GetMapping("/checkout")
-    public String login() {
+    public String checkout() {
         return "checkout";
     }
 }
+

@@ -2,15 +2,14 @@ package com.adprog6.endomie.controllers;
 
 import com.adprog6.endomie.diy.CustomNoodle;
 import com.adprog6.endomie.diy.model.Indomie;
+import com.adprog6.endomie.diy.model.MenuCreated;
 import com.adprog6.endomie.diy.model.Topping;
 import com.adprog6.endomie.diy.noodles.IndomieDefault;
 import com.adprog6.endomie.diy.noodles.IndomieProducer;
 import com.adprog6.endomie.diy.toppings.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -95,5 +94,23 @@ public class DIYController {
 		public ResponseEntity<Object> getTopping() {
 			return new ResponseEntity<>(toppingRepo.values(), HttpStatus.OK);
 		}
+
+	private static Map<String, MenuCreated> menuRepo = new HashMap<>();
+	@RequestMapping(value = "diy/checkout", method = RequestMethod.POST)
+	public @ResponseBody MenuCreated checkout(@RequestBody MenuCreated requestJSON) {
+		MenuCreated menu = new MenuCreated();
+		menu.setId(requestJSON.getId());
+		menu.setMenu(requestJSON.getMenu());
+		menu.setPrice(requestJSON.getPrice());
+		menuRepo.put(menu.getId(), menu);
+		return menu;
+	}
+
+	@RequestMapping(value = "diy/checkout")
+	public ResponseEntity<Object> getMenu() {
+		return new ResponseEntity<>(menuRepo.values(), HttpStatus.OK);
+	}
+
+
 
 }
