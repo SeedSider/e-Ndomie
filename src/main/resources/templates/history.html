@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-signin-client_id" content="961550789227-laiqbepgmtmgn6ebftoa1c48eofrb95k.apps.googleusercontent.com">
+    <th:block th:include="fragments/head :: headFragment"></th:block>
+    <title>History - E-ndomie</title>
+    <link rel="stylesheet" th:href="@{/css/history.css}">
+</head>
+<body>
+<!--navbar-->
+<div lang="en" th:replace="fragments/navbar :: navbar"> </div>
+
+<!--jumbotron-->
+<div class="jumbotron jumbotron-fluid" style="background-image:url('https://i.imgur.com/gIlevmh.jpg'); width: 100%; height: 100%">
+    <div class="container">
+        <h1 class="display-4" style="color: white; font-weight: bold;">History</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="cd-popup" role="alert">
+        <div class="cd-popup-container">
+            <p>Are you sure you want to delete this element?</p>
+            <ul class="cd-buttons">
+                <li onclick="yesFunction()"><a href="#0">Yes</a></li>
+                <li onclick="cancelFunction()"><a href="#0">No</a></li>
+            </ul>
+        </div> <!-- cd-popup-container -->
+    </div> <!-- cd-popup -->
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <h1>DAFTAR VOUCHER</h1>
+            <br>
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Indomie</th>
+                    <th scope="col">Toppping</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Goreng original</th>
+                    <td>Kornet</td>
+                    <td>1</td>
+                    <td>20000</td>
+                    <td>
+                        <i class="fas fa-trash-alt" onclick="deleteList()"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Goreng original</th>
+                    <td>Kornet</td>
+                    <td>1</td>
+                    <td>20000</td>
+                    <td>
+                        <i class="fas fa-trash-alt" onclick="deleteList()"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Goreng original</th>
+                    <td>Kornet</td>
+                    <td>1</td>
+                    <td>20000</td>
+                    <td>
+                        <i class="fas fa-trash-alt" onclick="deleteList()"></i>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div lang="en" th:replace="fragments/footer :: footer"> </div>
+
+<script th:src="@{/js/history.js}"></script>
+</body>
+</html>
