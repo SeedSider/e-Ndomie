@@ -14,6 +14,9 @@
 
 }
 
+.card-shop {
+    margin: 75px;
+}
 .price {
     color: grey;
     font-size: 22px;
@@ -90,7 +93,7 @@ hr{
 }
 
 .jumbotron{
-    background-image: url('https://media.malaymail.com/uploads/articles/2018/2018-10/1910_indomie1.jpg');
+    background-image: url('https://prods3.imgix.net/images/articles/2016_02/Hero-Japanese-Trend-Restaurants-Japan-Marukin-Mr-Taka-Ramen-Ootoya-Sushi-Soba-Asian-Recipes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 150px;
