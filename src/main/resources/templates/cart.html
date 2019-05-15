@@ -23,15 +23,15 @@
 
             <script id="shopping-cart--list-item-template" type="text/template">
                 <li class="_grid shopping-cart--list-item">
-                    <div class="_column product-image">
-                        <img class="product-image--img" src="{{=thumbnail}}" alt="Item image" />
-                    </div>
+<!--                    <div class="_column product-image">-->
+<!--                        <img class="product-image&#45;&#45;img" src="{{=thumbnail}}" alt="Item image" />-->
+<!--                    </div>-->
                     <div class="_column product-info">
-                        <h4 class="product-name">{{=name}}</h4>
-                        <p class="product-desc">{{=desc}}</p>
-                        <div class="price product-single-price">${{=cost}}</div>
+                        <h4 class="product-name">{{=menu}}</h4>
+                        <p class="product-desc"><br><br></p>
+                        <div class="price product-single-price">${{=price}}</div>
                     </div>
-                    <div class="_column product-modifiers" data-product-price="{{=cost}}">
+                    <div class="_column product-modifiers" data-product-price="{{=price}}">
                         <div class="_grid">
                             <button class="_btn _column product-subtract">&minus;</button>
                             <div class="_column product-qty">0</div>
@@ -255,7 +255,7 @@
             $.ajax({
                 type: 'GET',
                 data: {},
-                url: 'http://localhost:8080/diy/noodles',
+                url: 'http://e-ndomie.herokuapp.com/diy/checkout',
                 dataType: 'json',
                 success: function (data) {
                     products = eval(JSON.stringify(data));
@@ -270,7 +270,68 @@
         }
     };
 
+    $('#checkoutButton').click(function () {
 
+    <!-- get info utk json -->
+    var listIndomie = [];
+    var listHarga = [];
+
+
+
+    $(".product-name").each(function(){
+        console.log($(this).text());
+        listIndomie.push($(this).text());
+    });
+
+    // var cek = $(".price product-total-price")[0].text();
+    // var cek = $(".cart-totals-value")[3].text();
+
+        // var cek = $('.cart-totals-value').text();
+        var totalHarga = $("#totalCtr").find(".cart-totals-value").text();
+
+        // console.log("cek "+cek);
+
+    // $(".price product-total-price").each(function(){
+    //     console.log(listOrder);
+    //     listHarga.push($(this).text());
+    // });
+    //     var profile = googleUser.getBasicProfile();
+        var id = Math.random();
+
+        var cartInfo="[ { \"id\" : \"1\""+",\"menu\" :";
+
+
+
+    // for (var i = 0; i < listIndomie.length; i += 1) {
+    //     cartInfo+=",{\"menu\" : \""+listIndomie[i]+
+    //         "\",\"price\" :\""+listHarga[i]+"\"}";
+    // }
+
+     for (var i = 0; i < listIndomie.length; i += 1){
+        cartInfo+="\""+listIndomie[i]+"\",";
+    }
+
+    cartInfo+="\"totalHarga\" :\""+totalHarga+"\"}]"
+    console.log(cartInfo);
+    var jsonCartInfo = eval(cartInfo);
+        console.log(jsonCartInfo);
+
+    // console.log(id);
+    // var requestJSON = JSON.stringify(cartInfo);
+    var requestJSON = cartInfo;
+    console.log(requestJSON);
+    $.ajax({
+        url : "http://localhost:8080/cart/all",
+        type : "POST",
+        contentType : 'application/json',
+        data : requestJSON,
+        success : function (data) {
+            console.log(data);
+        },
+        error : function (data) {
+        }
+    });
+    });
 
     app.renderTemplates();
     app.setProductImages();
