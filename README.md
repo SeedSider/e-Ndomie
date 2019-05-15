@@ -17,3 +17,6 @@
 
 ## Link Heroku:
 https://e-ndomie.herokuapp.com/
+
+## Link Gitlab Back-end diy:
+https://gitlab.com/adpro_kelompok_c/e-ndomie-backend.git
